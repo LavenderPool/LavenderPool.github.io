@@ -303,8 +303,13 @@ body a:hover {
 .pagination > li > span:hover {
   z-index: 3;
   color: #9c9c9e;
-  background-color: #202020;
+  background-color: #404040;
   border-color: #595959;
+}
+
+.pagination li a {
+  background-color: #202020;
+  border-color: #202020;
 }
 
 @media (max-width: 1182px) {
