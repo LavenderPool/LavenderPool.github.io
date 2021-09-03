@@ -253,8 +253,7 @@ body::before {
 
 #content-block {
   background: rgba(20, 20, 20, 0.9);
-  border: 3px solid #292929;
-  margin-left: 2px;
+  border: 2px solid #292929;
 }
 
 .page {
@@ -296,6 +295,16 @@ body a:hover {
 
 .article {
   background: rgba(20, 20, 20, 0.8);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  z-index: 3;
+  color: #9c9c9e;
+  background-color: #202020;
+  border-color: #595959;
 }
 
 @media (max-width: 1182px) {
