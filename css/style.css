@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+500;700&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(20, 20, 20, 0.5);
+  letter-spacing: 0.1rem;
+  border: 1px solid #292929;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
+
+.dropdown-menu-dark {
+  border-radius: 0 !important;
+}
+
+.form-control {
+  background: none;
+  border: 1px solid #555555;
+  border-radius: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+/*
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+*/
+
+footer {
+  background: #202020;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+footer a,
+footer a:visited,
+footer a:active {
+  color: #c0c0c0;
+}
+
+#body {
+  background: #111111;
+}
+
+._no-webp body::before{
+  background-image: url("../img/backgrounds/wp6214950.jpg"); }
+
+body::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: -10;
+  opacity: 0.25;
+}
+
+._no-webp .support{
+  background-image: url("../img/images/samuel.png"); }
+
+.support {
+  background: transparent;
+  background: rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: 42% 42%;
+  min-height: 8rem;
+  border: 1px solid #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-block {
+  background: rgba(20, 20, 20, 0.9);
+  border: 3px solid #292929;
+  margin-left: 2px;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.btn-kizuko {
+  background: #ffffff;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.btn-kizuko:hover {
+  background: #dddddd;
+}
+
+body {
+  color: #cecece;
+}
+
+body a {
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+body a,
+body a:active,
+body a:visited {
+  color: #cecece !important;
+}
+
+body a:hover {
+  color: #fff !important;
+}
+
+.article {
+  background: rgba(20, 20, 20, 0.8);
+}
+
+@media (max-width: 1182px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+._webp body::before{ background-image: url(../img/backgrounds/wp6214950.webp); }
+
+._webp .support{ background-image: url(../img/images/samuel.webp); }
