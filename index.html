@@ -51,7 +51,7 @@
 			flex-direction: column;
 			justify-content: center;
 			width: 30%;
-			border-radius: 14px;
+			border-radius: 20px;
 		}
 		.container__place-button:hover{
 			background: #093258!important;
@@ -84,17 +84,24 @@
 			}
 			.container__place{
 				position: relative!important;
-				background: #153f65;
-				color: #fff;
+				background-image:  url('image/photo8.jpg');
 				width: 100%;
+				background-position: top;
+				color: #fff;
+				text-shadow: 1px 1px 1px #242424;
 			}
-			.container__place-button{
-				background: #fff!important;
-				color: #153f65!important;
+			.container__place::after{
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				border-radius: 20px;
+				top: 0;
+				right: 0;
+				display: block;
+				background: rgba(0,0,0,0.2);
 			}
-			.container__place-button:hover{
-			background: #999!important;
-		}
+
 		}
 	</style>
 	<div class="yui">
@@ -182,17 +189,17 @@
 		display:flex;
 		justify-content: space-between;
 		flex-wrap: wrap;">
-				<img src="image/1.JPG" alt="">
-				<img src="image/1.JPG" alt="">
-				<img src="image/1.JPG" alt="">
-				<img src="image/1.JPG" alt="">
-				<img src="image/1.JPG" alt="">
-				<img src="image/1.JPG" alt="">
+				<img src="image/photo1.jpg" alt="">
+				<img src="image/photo2.jpg" alt="">
+				<img src="image/photo3.jpg" alt="">
+				<img src="image/photo4.jpg" alt="">
+				<img src="image/photo5.jpg" alt="">
+				<img src="image/photo6.jpg" alt="">
 		</div>
 		<div class="container__place" style="position: absolute;">
-			<div class="container__place-text" style="font-size: 30px; font-weight: 800;">СТУДЕНЧЕСКАЯ ЖИЗНЬ</div>
+			<div class="container__place-text" style="font-size: 30px; font-weight: 800; z-index: 10;">СТУДЕНЧЕСКАЯ ЖИЗНЬ</div>
 			<a href="#" class="container__place-button" style="background: #153f65; color: #fff; width: max-content;
-			margin: 10px auto; padding: 0.7rem 2rem; border-radius: 7px; opacity: 0.9; transition-duration: 0.2s;">Подробнее</a>
+			margin: 10px auto; padding: 0.7rem 2rem; border-radius: 7px; opacity: 0.9; transition-duration: 0.2s;z-index: 10;">Подробнее</a>
 		</div>
 	</div>
 	<div class="yui">
