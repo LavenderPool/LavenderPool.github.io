@@ -854,6 +854,10 @@ h6 {
   }
 }
 @media (max-width: 768px) {
+  .contact-right {
+    padding: 0;
+  }
+
   .splide__arrow {
     width: 48px;
     height: 48px;
