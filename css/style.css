@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Rubik;
   font-display: swap;
@@ -702,6 +703,69 @@ h6 {
 
 .swiper-slide-visible {
   opacity: 1;
+}
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 70px 30px;
+  border-radius: 3px;
+  background-color: #090909;
+  color: #FFDC0D;
+  transition: 0.3s all;
+  border-radius: 7px;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal._active,
+.overlay._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+#modal svg:hover {
+  fill: #fff;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
 }
 
 * {
