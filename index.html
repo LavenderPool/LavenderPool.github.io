@@ -35,7 +35,7 @@
 		
 		<link rel="stylesheet" href="/css/style.min.css"> 
 		<!-- CSS  new version start-->
-		    <link rel="stylesheet" type="text/css" href="http://oloday.com/public/css/daterangepicker.min.css" />
+		    <link rel="stylesheet" type="text/css" href="http://sergey250890.github.io/public/css/daterangepicker.min.css" />
     <link  rel="stylesheet" type="text/css" href="https://sergey250890.github.io/public/css/glyphicon.css"/>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -65,6 +65,7 @@
 <!-- //demo mode restore -->
 
 
+<!--  -->
 <header class="header_area  animated fadeIn homenav">
 	<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -243,6 +244,8 @@
 	}
 }
 </style>
+
+<!--    -->
 <!-- Modal Window -->
 <div class="modal right fade" id="left_modal" tabindex="-1" role="dialog" aria-labelledby="left_modal">
     <div class="modal-dialog" role="document">
@@ -262,33 +265,39 @@
                         <li><a href="http://oloday.com/signup">Зарегистрироваться</a></li>
                         <li><a href="http://oloday.com/login">Авторизоваться</a></li>
 								<li>
+<!-- 									 -->
 									<form id="front-search-form1 mobile-form" method="post" action="http://oloday.com/search" class="mob-search mt-3 mb-3 p-2"
-style="border-radius: 14px; margin: 0 auto;"
->
-	<input type="hidden" name="_token" value="EULi6Tt251VuEFaMlmGIQjOcSJoDx8NMhbucnkFV">
-	<div class="row header-form">
-		<div style="width: 100%;">
-			<input autocomplete="off" placeholder="Куда поедите ?" name="in" type="text" value="" required class="header-form__input">
-		</div>
-		<div style="width: 50%;">
-			<input autocomplete="off" placeholder="Заезд" name="in" type="text" value="" required class="header-form__input">
-		</div>
-		<div style="width: 50%;">
-			<input autocomplete="off" placeholder="Выезд" name="out" type="text" value="" required class="header-form__input">
-		</div>
-		<div style="width: 100%;">
-			<input autocomplete="off" placeholder="Гости" name="location" type="text" value="" required class="header-form__input">
-		</div>
-		<button type="submit" class="btn vbtn-default  text-14" style="margin-left: auto;
-		position: relative;
-		right: 50%;
-		transform: translate(50%, 0);
-		width: 30%;
-		border-radius: 7px;
-		margin-top: 1rem;
-		"><i class="fa fa-search"></i></button>
-	</div>
-</form>
+									style="border-radius: 14px; margin: 0 auto;"
+									>
+										<input type="hidden" name="_token" value="EULi6Tt251VuEFaMlmGIQjOcSJoDx8NMhbucnkFV">
+										<div class="row header-form">
+											<div style="width: 100%;">
+												<input autocomplete="off" placeholder="Куда поедите ?" name="in" type="text" value="" required class="header-form__input">
+											</div>
+											<div id="daterange-btn" style="width: 100%;">
+												<div style="width: 50%;">
+													<!-- <label> Заезд1</label> -->
+													<input class="form-control p-3  text-14 checkinout" name="checkin" id="startDate" type="text" placeholder="Заезд" autocomplete="off" readonly="readonly" required="" style="font-size: 1.3rem;">
+												</div>
+												<div style="width: 50%;">
+													<!-- <label>Выезд1</label> -->
+													<input class="form-control p-3 text-14 checkinout" name="checkout" id="endDate" placeholder="Выезд" type="text" readonly="readonly" required="" style="font-size: 1.3rem;">
+												</div>
+											</div>
+											<div style="width: 100%;">
+												<input autocomplete="off" placeholder="Гости" name="location" type="text" value="" required class="header-form__input">
+											</div>
+											<button type="submit" class="btn vbtn-default  text-14" style="margin-left: auto;
+											position: relative;
+											right: 50%;
+											transform: translate(50%, 0);
+											width: 30%;
+											border-radius: 7px;
+											margin-top: 1rem;
+											"><i class="fa fa-search"></i></button>
+										</div>
+									</form>
+<!-- 									 -->
 								</li>
                     	                    <li>
 	                        <a href="#" aria-label="modalLanguge" data-toggle="modal" data-target="#languageModalCenter"> <i class="fa fa-globe"></i> <u>Русский </u></a>
