@@ -63,104 +63,197 @@
 	
 
 <!-- //demo mode restore -->
-<style>
-	@media (min-width: 768px){
-.homenav #front-search-form1 {
-    display: block!important;
-}
-}
-</style>
-<header class="header_area  animated fadeIn homenav">
-    <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid container-fluid-90">
-                <a class="navbar-brand logo_h d-none dark_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
-            
-               <a class="navbar-brand logo_h light_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
 
-				<a class="navbar-brand logo_h d-block" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="mob-logo" style="object-fit: cover;"></a> 
-                <a href="#" onclick="goBack()" class="mob-back-btn d-block d-sm-none"><i class="fas fa-chevron-left"></i></a>
+
+<header class="header_area  animated fadeIn homenav">
+	<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid container-fluid-90">
+					<a class="navbar-brand logo_h d-none dark_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
+				
+					<a class="navbar-brand logo_h light_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
+
+				<a class="navbar-brand logo_h d-block" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="mob-logo" style="object-fit: contain;"></a> 
+					<a href="#" onclick="goBack()" class="mob-back-btn d-block d-sm-none"><i class="fas fa-chevron-left"></i></a>
 				<!-- Trigger Button -->
-				<a href="#" aria-label="navbar" class="navbar-toggler" data-toggle="modal" data-target="#left_modal">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-                </a>
+				
 				
 				<!--<h4 class="sv_header_text mt-3">Сделайте бронирование</h4>-->
 					
 				
 				<!--<p class="sv_start_your_search text-14 p-2 pl-4 min-w-250 hide">Начать поиск
-				    <button type="submit" class="btn vbtn-default p-2 ml-5 text-14"><i class="fa fa-search"></i> </button>
+					<button type="submit" class="btn vbtn-default p-2 ml-5 text-14"><i class="fa fa-search"></i> </button>
 				</p>-->
 				
-           
-		        <form id="front-search-form1" method="post" action="http://oloday.com/search" class="mob-search mt-3 mb-3 p-2">
+				
+					<form id="front-search-form1" method="post" action="http://oloday.com/search" class="mob-search mt-3 mb-3 p-2">
 					<input type="hidden" name="_token" value="EULi6Tt251VuEFaMlmGIQjOcSJoDx8NMhbucnkFV">
-					<div class="row">
-						<input autocomplete="off" class="form-control p-3 text-14 ml-3 m-0" id="front-search-field1" placeholder="Куда ты хочешь пойти?" name="location" type="text" value="" required>
-
-					    <button type="submit" class="btn vbtn-default p-2 ml-5 text-14"><i class="fa fa-search"></i></button>
+					<div class="row header-form">
+						<div style="width: max-content;">
+							<input autocomplete="off" placeholder="Куда поедите ?" name="in" type="text" value="" required style="margin-left: 1rem;"class="header-form__input">
+						</div>
+						<div style="max-width: 80px;">
+							<input autocomplete="off" placeholder="Заезд" name="in" type="text" value="" required class="header-form__input">
+						</div>
+						<div style="max-width: 80px;">
+							<input autocomplete="off" placeholder="Выезд" name="out" type="text" value="" required class="header-form__input">
+						</div>
+						<div>
+							<input autocomplete="off" placeholder="Гости" name="location" type="text" value="" required class="header-form__input">
+						</div>
+						<button type="submit" class="btn vbtn-default  text-14" style="margin-left: auto"><i class="fa fa-search"></i></button>
 					</div>
 				</form>
+				<a href="#" aria-label="navbar" class="navbar-toggler" data-toggle="modal" data-target="#left_modal">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</a>
 
 					
-                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                    <div class="nav navbar-nav menu_nav justify-content-end">
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<div class="nav navbar-nav menu_nav justify-content-end">
 
-                            <!--                                <div class="nav-item">
-                                    <a class="nav-link p-2 mt-3" href="http://oloday.com/property/create" aria-label="property-create">
-                                        <button class="btn button vbtn-default text-14 p-0 mt-2 pl-4 pr-4 br-50">
-                                            <p class="p-3 mb-0">  Перечислите свое пространство</p>
-                                        </button>
-                                    </a>
-                                </div>
-                            -->
-                            <div class="nav-item">
-                                    <a class="nav-link p-2 mt-3" href="http://oloday.com/property/create" aria-label="property-create">
-                                        <button class="btn button vbtn-default text-14 p-0 mt-2 pl-4 pr-4 br-50">
-                                            <p class="p-3 mb-0">  Перечислите свое пространство</p>
-                                        </button>
-                                    </a>
-                                </div>
+									<!--                                <div class="nav-item">
+												<a class="nav-link p-2 mt-3" href="http://oloday.com/property/create" aria-label="property-create">
+													<button class="btn button vbtn-default text-14 p-0 mt-2 pl-4 pr-4 br-50">
+															<p class="p-3 mb-0">  Перечислите свое пространство</p>
+													</button>
+												</a>
+											</div>
+									-->
+									<div class="nav-item">
+												<a class="nav-link p-2 mt-3" href="http://oloday.com/property/create" aria-label="property-create">
+													<button class="btn button vbtn-default text-14 p-0 mt-2 pl-4 pr-4 br-50"  style="background: none; color: #676767!important; padding: 0!Important;">
+															<p class="p-3 mb-0 housing" style="font-weight: 400;">  Сдайте жилье</p>
+													</button>
+												</a>
+											</div>
 							
 						<!--<div class="nav-item">
-                            <a class="nav-link" href="#" aria-label="signup">Станьте хозяином</a>
-                        </div>-->
+									<a class="nav-link" href="#" aria-label="signup">Станьте хозяином</a>
+								</div>-->
 						
 						<div class="nav-item">
 							<a class="nav-link globe" href="#" aria-label="modalLanguge" data-toggle="modal" data-target="#languageModalCenter"> <i class="fa fa-globe text-18"></i> </a>
-                        </div>
-                        
-                                                    <div class="nav-item">
+								</div>
+								
+																	<div class="nav-item">
 									<div class="dropdown sv_user_login">
 										<button class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i>
 											<img src="http://oloday.com/public/images/profile.jpg" class="head_avatar" alt="">
 										</button>
 										
 										<ul class="dropdown-menu">
-										    										        <li><a  aria-label="" data-toggle="modal" data-target="#registermodel"  href="#">Зарегистрироваться</a></li>
-                                            										    
-										    										      <li><a aria-label="" data-toggle="modal" data-target="#loginmodel"  href="#">Авторизоваться</a></li>
-                                            										    
-										  <hr>
-										  <li><a href="http://oloday.com/help">Помощь</a></li>
+																								<li><a  aria-label="" data-toggle="modal" data-target="#registermodel"  href="#">Зарегистрироваться</a></li>
+																										
+																							<li><a aria-label="" data-toggle="modal" data-target="#loginmodel"  href="#">Авторизоваться</a></li>
+																										
+											<hr>
+											<li><a href="http://oloday.com/help">Помощь</a></li>
 										</ul>
 									</div>
 								
-                            </div>
-                          
-                                            </div>
-                </div>
-            </div>
-        </nav>
-		
-		
-    </div>
-	
-			
+									</div>
+									
+						</div>
+					</div>
+				</div>
+			</nav>
+	</div>
 </header>
 
+
+<style>
+	.header-form__input{
+		padding: 0;
+		border: none;
+		width: 100%;
+		background: none;
+	}
+	.header_area .navbar .nav .nav-item {
+		margin-right: 2rem;
+	}
+	
+	.header-form>div{
+		display: flex;
+		align-items: center;
+		width: 20%;
+	}
+
+	.header-form>div::after{
+		content: "";
+		display: block;
+		width: 1px;
+		height: 15px;
+		margin: 0 5px;
+		background: rgba(70,70,70,0.5);
+	}
+	.header-form>div:nth-child(4)::after{
+		width: 0px;
+	}
+	.header-form>div:last-child{
+		border-right: none;
+	}
+	.header_area .navbar .nav .nav-item .nav-link {
+		color: #676767;
+		padding:3rem 0;
+		display: inline-block;
+		font-size: 1.5rem;
+	}
+	#mobile-form{
+		display: none;
+	}
+</style>
+
+<style>
+	@media(max-width: 1080px){
+		.light_logo img{
+			width: 80px;
+			object-fit: contain;
+		}
+		.header-form>div:nth-child(1){
+			width: 140px;
+		}
+	}
+
+	@media (min-width: 768px){
+.homenav #front-search-form1 {
+    display: block!important;
+	 width: 50%;
+}
+}
+@media(max-width: 992px){
+	.homenav #front-search-form1 {
+			display: none!important;
+			
+		}
+	.mob-search {
+	display: block;
+	width: 60%;
+	}
+	.header-form>div::after{
+		width: 0;
+	}
+	.header-form__input{
+		border-bottom: 1px solid rgba(67,67,67,0.5);
+		padding: 0 10px;
+		margin: 5px 0;
+	}
+}
+@media (max-width: 767px){
+.mob-logo {
+    width: 100px;
+    height: 40px;
+}
+}
+@media(max-width: 568px){
+	.mob-search {
+	display: block;
+	width: 90%;
+	}
+}
+</style>
 <!-- Modal Window -->
 <div class="modal right fade" id="left_modal" tabindex="-1" role="dialog" aria-labelledby="left_modal">
     <div class="modal-dialog" role="document">
@@ -179,6 +272,35 @@
                         <li><a href="http://oloday.com/help">Помощь</a></li>
                         <li><a href="http://oloday.com/signup">Зарегистрироваться</a></li>
                         <li><a href="http://oloday.com/login">Авторизоваться</a></li>
+								<li>
+									<form id="front-search-form1 mobile-form" method="post" action="http://oloday.com/search" class="mob-search mt-3 mb-3 p-2"
+style="border-radius: 14px; margin: 0 auto;"
+>
+	<input type="hidden" name="_token" value="EULi6Tt251VuEFaMlmGIQjOcSJoDx8NMhbucnkFV">
+	<div class="row header-form">
+		<div style="width: 100%;">
+			<input autocomplete="off" placeholder="Куда поедите ?" name="in" type="text" value="" required class="header-form__input">
+		</div>
+		<div style="width: 50%;">
+			<input autocomplete="off" placeholder="Заезд" name="in" type="text" value="" required class="header-form__input">
+		</div>
+		<div style="width: 50%;">
+			<input autocomplete="off" placeholder="Выезд" name="out" type="text" value="" required class="header-form__input">
+		</div>
+		<div style="width: 100%;">
+			<input autocomplete="off" placeholder="Гости" name="location" type="text" value="" required class="header-form__input">
+		</div>
+		<button type="submit" class="btn vbtn-default  text-14" style="margin-left: auto;
+		position: relative;
+		right: 50%;
+		transform: translate(50%, 0);
+		width: 30%;
+		border-radius: 7px;
+		margin-top: 1rem;
+		"><i class="fa fa-search"></i></button>
+	</div>
+</form>
+								</li>
                     	                    <li>
 	                        <a href="#" aria-label="modalLanguge" data-toggle="modal" data-target="#languageModalCenter"> <i class="fa fa-globe"></i> <u>Русский </u></a>
 							<a href="#" aria-label="modalCurrency" data-toggle="modal" data-target="#currencyModalCenter"> <span class="ml-4">₽ - <u>RUB</u> </span></a>
@@ -3597,7 +3719,7 @@
 	</script>
 			
 		<!-- Needed Js from Old Version End -->
-		    <script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyBjxknPFQxYv3j5xWuNgNISwaFIdSPVp_I&libraries=places'></script>
+	 <!-- <script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyBjxknPFQxYv3j5xWuNgNISwaFIdSPVp_I&libraries=places'></script> -->
     <script type="text/javascript" src="https://sergey250890.github.io/public/js/moment.min.js"></script>
     <script type="text/javascript" src="https://sergey250890.github.io/public/js/daterangepicker.min.js"></script>
     <script type="text/javascript" src="https://sergey250890.github.io/public/js/front.min.js"></script>
