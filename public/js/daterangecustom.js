@@ -73,7 +73,7 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 		var today = moment();
 		today =  moment(today, customFormat.dateFormat);
 
-		$('#daterange-btn').daterangepicker({
+		$('.daterange-btn').daterangepicker({
 			ranges   : {
 							'Anytime'	  : [moment(0),moment()],
 							'Today'       : [moment(), moment()],
@@ -91,29 +91,29 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 			}, function(start, end) {
 			
 				var startDate        = moment(start, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#startDate").val(startDate);
+				$(".startDate").val(startDate);
 				var endDate          = moment(end, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#endDate").val(endDate);
+				$(".endDate").val(endDate);
 				initdate = moment(initdate, customFormat.showDateFormat).format(customFormat.dateSep);
 				today = moment(today, customFormat.showDateFormat).format(customFormat.dateSep);
 				if (startDate == 'undefined' || endDate == 'undefined') {
-					$('#daterange-btn span').html('Pick a date range');
+					$('.daterange-btn span').html('Pick a date range');
 				} else if (startDate == '' || endDate == '' || (startDate === initdate && endDate === today )) {
-					$('#daterange-btn span').html('Anytime');
+					$('.daterange-btn span').html('Anytime');
 					
 				} else {
 						startDate = moment(startDate, customFormat.showDateFormat).format(customFormat.dateSep);
 						endDate = moment(endDate, customFormat.showDateFormat).format(customFormat.dateSep);
-						$("#startDate").val(startDate);
-						$("#endDate").val(endDate);
-						$('#daterange-btn span').text(startDate + '-' + endDate );
+						$(".startDate").val(startDate);
+						$(".endDate").val(endDate);
+						$('.daterange-btn span').text(startDate + '-' + endDate );
 				}
 			});
 			
 			
 			
 			
-		$('#daterange-btn1').daterangepicker({
+		$('.daterange-btn1').daterangepicker({
 			ranges   : {
 							'Anytime'	  : [moment(0),moment()],
 							'Today'       : [moment(), moment()],
@@ -131,22 +131,22 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 			}, function(start, end) {
 			
 				var startDate        = moment(start, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#startDate").val(startDate);
+				$(".startDate").val(startDate);
 				var endDate          = moment(end, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#endDate").val(endDate);
+				$(".endDate").val(endDate);
 				initdate = moment(initdate, customFormat.showDateFormat).format(customFormat.dateSep);
 				today = moment(today, customFormat.showDateFormat).format(customFormat.dateSep);
 				if (startDate == 'undefined' || endDate == 'undefined') {
-					$('#daterange-btn1 span').html('Pick a date range');
+					$('.daterange-btn1 span').html('Pick a date range');
 				} else if (startDate == '' || endDate == '' || (startDate === initdate && endDate === today )) {
-					$('#daterange-btn1 span').html('Anytime');
+					$('.daterange-btn1 span').html('Anytime');
 					
 				} else {
 						startDate = moment(startDate, customFormat.showDateFormat).format(customFormat.dateSep);
 						endDate = moment(endDate, customFormat.showDateFormat).format(customFormat.dateSep);
-						$("#startDate").val(startDate);
-						$("#endDate").val(endDate);
-						$('#daterange-btn1 span').text(startDate + '-' + endDate );
+						$(".startDate").val(startDate);
+						$(".endDate").val(endDate);
+						$('.daterange-btn1 span').text(startDate + '-' + endDate );
 				}
 			});
 			
@@ -154,7 +154,7 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 			
 	} else {
 		initdate =  moment(init, customFormat.dateFormat);
-		$('#daterange-btn').daterangepicker({
+		$('.daterange-btn').daterangepicker({
 				"autoApply": true,
 				"alwaysShowCalendars": true,
 				"startDate": startDate,
@@ -166,8 +166,8 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 				var startDate        = moment(start, customFormat.showDateFormat).format(customFormat.dateSep);
 				var endDate          = moment(end, customFormat.showDateFormat).format(customFormat.dateSep);
 				
-				$("#startDate").val(startDate);
-				$("#endDate").val(endDate);	
+				$(".startDate").val(startDate);
+				$(".endDate").val(endDate);	
 				
 				var date = new Date(start);
 				var tomorrow = new Date(date.getTime() + 24 * 60 * 60 * 1000);
@@ -177,7 +177,7 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 				var endDate1          = moment(tomorrow, customFormat.showDateFormat).format(customFormat.dateSep);
 				
 					if(startDate=='' && endDate==''){
-						$('#daterange-btn span').html('<i class="fa fa-calendar"></i> &nbsp;&nbsp; Pick a date range');
+						$('.daterange-btn span').html('<i class="fa fa-calendar"></i> &nbsp;&nbsp; Pick a date range');
 					} else {
 							
 							startDate = moment(startDate, customFormat.showDateFormat).format(customFormat.dateSep);
@@ -186,17 +186,17 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 														
 							if(startDate==endDate) 
 							{
-								$("#startDate").val(startDate);
-								$("#endDate").val(endDate1);
+								$(".startDate").val(startDate);
+								$(".endDate").val(endDate1);
 							}
 							else
 							{
-								$("#startDate").val(startDate);
-								$("#endDate").val(endDate);
+								$(".startDate").val(startDate);
+								$(".endDate").val(endDate);
 							}
 								
 							
-							// $('#daterange-btn span').text(startDate + '-' + endDate );
+							// $('.daterange-btn span').text(startDate + '-' + endDate );
 							if(df == 'single') {
 								price_calculation('', '', '');
 							}
@@ -205,7 +205,7 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 			
 			
 			
-				$('#daterange-btn1').daterangepicker({
+				$('.daterange-btn1').daterangepicker({
 				"autoApply": true,
 				"alwaysShowCalendars": true,
 				"startDate": startDate,
@@ -215,18 +215,18 @@ function dateRangeBtn (startDate, endDate,dt=null) {
 			}, function(start, end) {
 			
 				var startDate        = moment(start, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#startDate").val(startDate);
+				$(".startDate").val(startDate);
 				var endDate          = moment(end, customFormat.showDateFormat).format(customFormat.dateSep);
-				$("#endDate").val(endDate);
+				$(".endDate").val(endDate);
 					if(startDate=='' && endDate==''){
-						$('#daterange-btn1 span').html('<i class="fa fa-calendar"></i> &nbsp;&nbsp; Pick a date range');
+						$('.daterange-btn1 span').html('<i class="fa fa-calendar"></i> &nbsp;&nbsp; Pick a date range');
 					} else {
 							
 							startDate = moment(startDate, customFormat.showDateFormat).format(customFormat.dateSep);
 							endDate = moment(endDate, customFormat.showDateFormat).format(customFormat.dateSep);
-							$("#startDate").val(startDate);
-							$("#endDate").val(endDate);
-							// $('#daterange-btn1 span').text(startDate + '-' + endDate );
+							$(".startDate").val(startDate);
+							$(".endDate").val(endDate);
+							// $('.daterange-btn1 span').text(startDate + '-' + endDate );
 							if(df == 'single') {
 								price_calculation('', '', '');
 							}
@@ -260,15 +260,15 @@ function formDate (startDate, endDate) {
 	}
 		
 	if (startDate == 'undefined' || endDate == 'undefined') {
-		$('#daterange-btn span').html('Pick a date range');
+		$('.daterange-btn span').html('Pick a date range');
 	} else if (startDate == '' || endDate == '' || (startDate === initdate && endDate === today )) {
-		$('#daterange-btn span').html('Anytime');
+		$('.daterange-btn span').html('Anytime');
 		
 	} else {
 			startDate = moment(startDate, customFormat.showDateFormat).format(customFormat.dateSep);
 			endDate = moment(endDate, customFormat.showDateFormat).format(customFormat.dateSep);
-			$("#startDate").val(startDate);
-			$("#endDate").val(endDate);
-			$('#daterange-btn span').text(startDate + '-' + endDate );
+			$(".startDate").val(startDate);
+			$(".endDate").val(endDate);
+			$('.daterange-btn span').text(startDate + '-' + endDate );
 	}
 }
