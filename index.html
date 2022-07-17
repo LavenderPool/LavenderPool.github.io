@@ -71,7 +71,7 @@
 				<div class="container-fluid container-fluid-90">
 					<a class="navbar-brand logo_h d-none dark_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
 				
-					<a class="navbar-brand logo_h light_logo" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
+					<a class="navbar-brand logo_h light_logo" aria-label="logo" href="http://oloday.com" style="margin-bottom: 7px;"><img src="img/logo.png" alt="logo" class="img-130x32"></a> 
 
 				<a class="navbar-brand logo_h d-block" aria-label="logo" href="http://oloday.com"><img src="img/logo.png" alt="logo" class="mob-logo" style="object-fit: contain;"></a> 
 					<a href="#" onclick="goBack()" class="mob-back-btn d-block d-sm-none"><i class="fas fa-chevron-left"></i></a>
@@ -88,17 +88,21 @@
 				
 					<form id="front-search-form1" method="post" action="http://oloday.com/search" class="mob-search mt-3 mb-3 p-2">
 					<input type="hidden" name="_token" value="EULi6Tt251VuEFaMlmGIQjOcSJoDx8NMhbucnkFV">
-					<div class="row header-form">
+					<div class="row header-form" style="align-items: center;">
 						<div style="width: max-content;">
 							<input autocomplete="off" placeholder="Куда поедите ?" name="in" type="text" value="" required style="margin-left: 1rem;"class="header-form__input">
 						</div>
-						<div style="max-width: 80px;">
-							<input autocomplete="off" placeholder="Заезд" name="in" type="text" value="" required class="header-form__input">
-						</div>
-						<div style="max-width: 80px;">
-							<input autocomplete="off" placeholder="Выезд" name="out" type="text" value="" required class="header-form__input">
-						</div>
-						<div>
+								<div id="daterange-btn" style="width: 35%;">
+									<div style="width: 50%; border-left: 1px solid rgba(67,67,67,0.5); padding: 0 5px;">
+										<!-- <label> Заезд1</label> -->
+										<input class="form-control p-3  text-14 checkinout" name="checkin" id="startDate" type="text" placeholder="Заезд" autocomplete="off" readonly="readonly" required="" style="font-size: 1.3rem; margin-top: -1px;">
+									</div>
+									<div style="width: 50%; border-left: 1px solid rgba(67,67,67,0.5); border-right: 1px solid rgba(67,67,67,0.5); padding: 0 5px;">
+										<!-- <label>Выезд1</label> -->
+										<input class="form-control p-3 text-14 checkinout" name="checkout" id="endDate" placeholder="Выезд" type="text" readonly="readonly" required="" style="font-size: 1.3rem; margin-top: -1px;">
+									</div>
+								</div>
+						<div style="padding: 0 5px;">
 							<input autocomplete="off" placeholder="Гости" name="location" type="text" value="" required class="header-form__input">
 						</div>
 						<button type="submit" class="btn vbtn-default  text-14" style="margin-left: auto"><i class="fa fa-search"></i></button>
@@ -179,21 +183,6 @@
 		display: flex;
 		align-items: center;
 		width: 20%;
-	}
-
-	.header-form>div::after{
-		content: "";
-		display: block;
-		width: 1px;
-		height: 15px;
-		margin: 0 5px;
-		background: rgba(70,70,70,0.5);
-	}
-	.header-form>div:nth-child(4)::after{
-		width: 0px;
-	}
-	.header-form>div:last-child{
-		border-right: none;
 	}
 	.header_area .navbar .nav .nav-item .nav-link {
 		color: #676767;
