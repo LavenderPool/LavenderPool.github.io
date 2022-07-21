@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__body">
+			<div class="header-left">
+				<div class="header__logo">
+					<a href="/">
+						<img src="img/header-logo.jpeg" alt="" width="128px">
+					</a>
+				</div>
+			</div>
+			<div class="header-right">
+				<ul class="header__ul">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Личный кабинет</a></li>	
+				</ul>
+				<div class="header__cart">
+					<img src="img/cart-plus-fill.svg" alt="" width="16px"> 0
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page__title">
+		<h1>Спасибо за Ваш заказ! - BimUp</h1>
+	</div>
+	<div class="container">
+		<div class="order">
+			<div class="title">Просмотр сведений и товаров</div>
+			<div class="ordedr__body">
+				<p class="order__email">example@example.com</p>
+				<table class="table table-striped">
+					<thead>
+					  <tr>
+						 <th scope="col">ID продукта</th>
+						 <th scope="col">Порядковый номер</th>
+						 <th scope="col">Ключ продукта</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						 <th scope="row">112</th>
+						 <td>Ключ продукта 1</td>
+						 <td>427837B2-C47A-130B-9DD9-9F3547EA4046</td>
+					  </tr>
+					</tbody>
+				</table>
+				<table class="table  table-striped">
+					<thead>
+					  <tr>
+						 <th scope="col">Оплата:</th>
+						 <th scope="col">id333</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						 <th scope="row">Статус оплаты:</th>
+						 <td>Выполнен</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Способ оплаты:</th>
+						<td>Бесплатная покупка</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Дата:</th>
+						<td>21.07.2022</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Подытог:</th>
+						<td>0.00 RUB</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Итоговая цена:</th>
+						<td>0.00 RUB</td>
+					  </tr>
+					</tbody>
+				</table>
+				<div class="title">Товары</div>
+				<table class="table table-striped">
+					<thead>
+					  <tr>
+						 <th scope="col">Название</th>
+						 <th scope="col">Количество</th>
+						 <th scope="col">Цена</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						 <th scope="row">
+							<p>Экспорт спецификаций из Revit в Excel</p>
+							<a href="#">ExportSchedules</a>
+						 </th>
+						 <td>1</td>
+						 <td>0</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="#">Пользовательско соглашение</a><span>©Bimup 2020</span>
+	</div>
+	<script>
+		let count = document.getElementById('count');
+		console.log(count);
+		function minus (){
+			if(count.value > 1){
+				count.value--;
+		}}
+		function plus (){
+			count.value++;
+		}
+	</script>
+</body>
+
+</html>

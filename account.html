@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__body">
+			<div class="header-left">
+				<div class="header__logo">
+					<a href="/">
+						<img src="img/header-logo.jpeg" alt="" width="128px">
+					</a>
+				</div>
+			</div>
+			<div class="header-right">
+				<ul class="header__ul">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Личный кабинет</a></li>	
+				</ul>
+				<div class="header__cart">
+					<img src="img/cart-plus-fill.svg" alt="" width="16px"> 0
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page__title">
+		<h1>Личный кабинет - BimUp</h1>
+	</div>
+	<div class="container account">
+		<form action="/auth.html" class="account-form">
+			<p class="account-form__title">Отображать как</p>
+			<select name="username" id="" class="account-form__select">
+				<option value="username">username</option>
+			</select>
+			<p class="account-form__title">Основной аадрес электронной почты</p>
+			<input type="email" value="example@example.com" class="account-form__input">
+			<p style="font-size: 1.75rem; color:#2e3d62; margin: 2rem 0 1rem 0;">Изменение пароля</p>
+			<p class="account-form__title">Новый пароль</p>
+			<input type="password" class="account-form__input">
+			<p class="account-form__title">Повторите пароль</p>
+			<input type="password" class="account-form__input">
+			<button type="submit">Сохранить изменения</button>
+		</form>
+		<a href="#" class="account-logout">Выйти с личного кабинета</a>
+		<div class="title">История покупок</div>
+		<div class="account-purchases">
+			<table class="table">
+				<thead>
+				  <tr>
+					 <th scope="col">Номер</th>
+					 <th scope="col">Дата</th>
+					 <th scope="col">Сумма</th>
+					 <th scope="col">Детали</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					 <th scope="row">#id397</th>
+					 <td>21.07.2022</td>
+					 <td>	0.00 RUB</td>
+					 <td><a href="/order.html">Просмотр сведений и товаров</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">#id397</th>
+					<td>21.07.2022</td>
+					<td>	0.00 RUB</td>
+					<td><a href="/order.html">Просмотр сведений и товаров</a></td>
+				 </tr>
+				</tbody>
+			 </table>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="#">Пользовательско соглашение</a><span>©Bimup 2020</span>
+	</div>
+	<script>
+		let count = document.getElementById('count');
+		console.log(count);
+		function minus (){
+			if(count.value > 1){
+				count.value--;
+		}}
+		function plus (){
+			count.value++;
+		}
+	</script>
+</body>
+
+</html>

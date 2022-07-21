@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__body">
+			<div class="header-left">
+				<div class="header__logo">
+					<a href="/">
+						<img src="img/header-logo.jpeg" alt="" width="128px">
+					</a>
+				</div>
+			</div>
+			<div class="header-right">
+				<ul class="header__ul">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Личный кабинет</a></li>	
+				</ul>
+				<div class="header__cart">
+					<img src="img/cart-plus-fill.svg" alt="" width="16px"> 0
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page__title">
+		<h1>Контакты</h1>
+	</div>
+	<div class="container" style="margin-top: 100px; margin-bottom: 100px; min-height: 53vh;">
+		<div class="row">
+			<div class="col-6">
+				<div class="contact__body">
+					<form class="row contact-form" action="/contact.html">
+					<div class="title">Связаться</div>
+					<div class="col-6">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="col-6">
+						<input type="text" placeholder="Email">
+					</div>
+					<div class="col-12">
+						<textarea name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+					</div>
+					<button type="submit" class="col-12">Отправить</button>
+				</form>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="contact__body">
+					<div class="title">Ссылки</div>
+					<ul class="contact__links">
+						<li><a href="#">Telegram<img src="img/svg/telegram-white.svg" alt=""></a></li>
+						<li><a href="#">Вконтакте<img src="img/svg/vk-white.svg" alt=""></a></li>
+						<li><a href="#">Ютуб<img src="img/svg/youtube-white.svg" alt=""></a></li>
+						<li><a href="#">Facebook<img src="img/svg/facebook-white.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="#">Пользовательско соглашение</a><span>©Bimup 2020</span>
+	</div>
+	<script>
+		let count = document.getElementById('count');
+		console.log(count);
+		function minus (){
+			if(count.value > 1){
+				count.value--;
+		}}
+		function plus (){
+			count.value++;
+		}
+	</script>
+</body>
+
+</html>
