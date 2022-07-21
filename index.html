@@ -21,15 +21,28 @@
 				</div>
 			</div>
 			<div class="header-right">
-				<ul class="header__ul">
+				<ul class="header__ul" id="header-pc">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Личный кабинет</a></li>	
 				</ul>
 				<div class="header__cart">
 					<img src="img/cart-plus-fill.svg" alt="" width="16px"> 0
 				</div>
+				<div class="dropdown" id="header-mobile">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Меню
+					</a>
+				 
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Главная</a></li>
+					  <li><a class="dropdown-item" href="#">Магазин</a></li>
+					  <li><a class="dropdown-item" href="#">Контакты</a></li>
+					  <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</header>
@@ -42,7 +55,7 @@
 	<div class="products ">
 		<div class="container">
 			<div class="title">Товары</div>
-			<div class="row row-cols-3">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
 				<a href="/product.html" class="col">
 					<div class="product__body">
 						<div class="product__header">
@@ -129,6 +142,7 @@
 	<div class="footer">
 		<a href="#">Пользовательско соглашение</a><span>©Bimup 2020</span>
 	</div>
+	<script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

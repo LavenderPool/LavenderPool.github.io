@@ -21,15 +21,28 @@
 				</div>
 			</div>
 			<div class="header-right">
-				<ul class="header__ul">
+				<ul class="header__ul" id="header-pc">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Личный кабинет</a></li>	
 				</ul>
 				<div class="header__cart">
 					<img src="img/cart-plus-fill.svg" alt="" width="16px"> 0
 				</div>
+				<div class="dropdown" id="header-mobile">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Меню
+					</a>
+				 
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Главная</a></li>
+					  <li><a class="dropdown-item" href="#">Магазин</a></li>
+					  <li><a class="dropdown-item" href="#">Контакты</a></li>
+					  <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</header>
@@ -43,8 +56,8 @@
 		<div class="auth__body">
 			<form class="auth__form" action="#">
 				<div class="title">Войти</div>
-				<input type="login" name="login" placeholder="Имя пользователя">
-				<input type="password" name="password" placeholder="Пароль">
+				<input type="login" name="login" placeholder="Имя пользователя" style="background-image: url(img/svg/person.svg);">
+				<input type="password" name="password" placeholder="Пароль" style="background-image: url(img/svg/key.svg);">
 				<button type="submit">Войти</button>
 			</form>
 			<a href="forgotpass.html" class="forgotpass">Забыли пароль ?</a>
