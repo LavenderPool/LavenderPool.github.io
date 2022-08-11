@@ -787,7 +787,7 @@ h6 {
 
 @media (max-width: 992px) {
   .main {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 45px;
   }
   .main__img {
@@ -814,6 +814,9 @@ h6 {
   }
   .pay__block-body {
     margin: 20px 10px;
+  }
+  .second {
+    background: none;
   }
 }
 @media (max-width: 768px) {
@@ -859,6 +862,7 @@ h6 {
   .main__title {
     font-size: 23px;
     padding: 0 20px;
+    margin-bottom: 10px;
   }
   .lk__block {
     margin: 5px;
@@ -897,6 +901,9 @@ h6 {
   }
   .header {
     border-radius: 0;
+  }
+  .second__title {
+    padding: 0 10px;
   }
 }
 @media (max-width: 515px) {
