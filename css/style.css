@@ -257,6 +257,8 @@ h6 {
   border-radius: 15px;
   width: max-content;
   margin: 0 auto 39px auto;
+  display: block;
+  text-align: center;
 }
 .lk__pay {
   margin: 0 auto;
