@@ -135,7 +135,7 @@ h6 {
 
 .header {
   border-radius: 0 0 17px 17px;
-  padding: 14px 20px;
+  padding: 14px 0;
   position: relative;
   z-index: 5;
   background: #fff;
@@ -907,9 +907,6 @@ h6 {
   }
   .header-burger {
     margin-left: 0;
-  }
-  .header {
-    padding: 14px 0;
   }
 }
 @media (max-width: 515px) {
