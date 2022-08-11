@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<title>prof</title>
+</head>
+	<body>
+		<header class="header">
+	<div class="container header__body">
+		<div class="header__balance">
+			<b>BALANCE:</b><span>5$</span>
+		</div>
+		<a href="/" class="header__logo">
+			<img src="img/logo.png" alt="">
+		</a>
+		<a href="#" class="header-profile-m">
+			<img src="img/profile.png" alt="">
+		</a>
+		<div class="header__menu">
+			<a href="#" class="header-profile">
+				<img src="img/profile.png" alt="">
+			</a>
+			<div class="header-burger" id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div class="header__balance-m">
+		<b>BALANCE:</b><span>5$</span>
+	</div>
+</header>
+		<div class="status">
+			<div class="status__header">
+				<div class="status__header-title"><b>status of your account</b></div>
+				<div class="status__header-time">
+					<p>Subscription ends after:</p>
+					<p><b>23 DAYS</b></p>
+				</div>
+				<div class="status__header-status"><b>ACTIVE</b></div>
+			</div>
+			<img class="status-icon" src="img/shield.png" alt="status">
+			<div class="status__buttons">
+				<a href="/lk.html" class="btn-sub">renew subscription</a>
+				<a href="#" class="btn-trail">3 DAYS TRIAL</a>
+			</div>
+		</div>
+		<div class="pay">
+			<div class="pay__title">your tariff plan</div>
+			<div class="container">
+				<form class="pay__blocks">
+					<label class="pay__block">
+						<input type="radio" name="pay">
+						<div class="pay__block-body">
+							<div class="pay__block-title">START</div>
+							<div class="pay__block-subtitle">7 DAYS OF PROTECTION</div>
+							<div class="pay__block-price">10 $</div>
+						</div>
+					</label>
+					<label class="pay__block">
+						<input type="radio" name="pay">
+						<div class="pay__block-body">
+							<div class="pay__block-title">silver</div>
+							<div class="pay__block-subtitle">30 DAYS OF PROTECTION</div>
+							<div class="pay__block-price">30 $</div>
+						</div>
+					</label>
+					<label class="pay__block">
+						<input type="radio" name="pay">
+						<div class="pay__block-body">
+							<div class="pay__block-title">GOLD</div>
+							<div class="pay__block-subtitle">90 DAYS OF PROTECTION</div>
+							<div class="pay__block-price">150 $</div>
+						</div>
+					</label>
+					<label class="pay__block">
+						<input type="radio" name="pay">
+						<div class="pay__block-body">
+							<div class="pay__block-title">PLATINUM</div>
+							<div class="pay__block-subtitle">180 DAYS OF PROTECTION</div>
+							<div class="pay__block-price">150 $</div>
+						</div>
+					</label>
+					<button type="submit" class="pay-btn">PAY</button>
+				</form>
+			</div>
+		</div>
+		<div class="wallet">
+			<div class="wallet__title">wallet that <br> are protected:</div>
+			<div class="container">
+				<div class="wallet__list">
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+					<div class="wallet__block">
+						<img src="img/fox.png" alt="">
+						METAMASK
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aboutus container">
+	<div class="aboutus__title"><b>ABOUT US</b></div>
+	<div class="aboutus__video">
+		<img src="img/play.svg" alt="">
+	</div>
+	<div class="aboutus__text">
+		<p>Every day our team works on the security
+			of your personal funds by keeping in touch with
+			Users <b>24\7</b></p>
+		<p>You can be sure that your funds will be protected
+			from intruders</p>
+	</div>
+</div>
+		<footer class="footer">
+	<div class="container footer__body">
+		<div class="footer__logo">
+			<img src="img/logo-white.png" alt="">
+		</div>
+		<a href="#" class="footer__button btn">
+			REGISTER
+		</a>
+		<div class="footer__links">
+			<a href="#">
+				<img src="img/instagram.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/telegram.png" alt="">
+			</a>
+		</div>
+		<a href="#" class="footer__button btn">
+			CONTACT US
+		</a>
+	</div>
+</footer>
+<div class="empty"></div>
+
+<div class="overlay" id="overlay" style="display: none;"></div>
+<div class="modal" id="modal" style="top: -300vh;">
+	<div class="modal__body">
+		<div class="modal__title">Меню</div>
+		<ul class="modal__list">
+			<li><a href="/">Главная</a></li>
+			<li><a href="/lk.html">Страница 1</a></li>
+			<li><a href="/prof.html">Страница 2</a></li>
+		</ul>
+	</div>
+</div>
+		<script src=" /js/app.min.js"></script>
+	</body>
+</html>
