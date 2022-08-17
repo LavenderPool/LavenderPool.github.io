@@ -269,6 +269,10 @@ h6 {
   margin-bottom: 25px;
 }
 
+.slider__img img {
+  max-width: 51px;
+}
+
 .slider__p2 {
   margin-top: 50px;
 }
