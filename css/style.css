@@ -907,10 +907,13 @@ h6 {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 11;
+  background: rgba(0, 0, 0, 0.1);
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .header__body {
@@ -919,7 +922,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
 }
 
 .header__list {
