@@ -177,7 +177,6 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -1099,17 +1098,14 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .table__titles {
-    width: 100%;
+  .table {
+    display: none;
   }
 
-  .table__row {
-    width: 100%;
-  }
-
-  .table__row *::after,
-  .table__row *::before {
-    width: 0;
+  .last {
+    position: relative;
+    top: -32px;
+    padding-top: 64px;
   }
 }
 
