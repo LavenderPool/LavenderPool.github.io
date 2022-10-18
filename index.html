@@ -5,315 +5,83 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		*{padding:0;margin:0;border:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}aside,nav,footer,header,section{display:block}html,body{height:100%}body{line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-weight:inherit;font-size:inherit}
-	</style>
-	<style>
-		*{
-			font-family: 'PT Sans', sans-serif;
-		}
-		body{
-			background: #232323;
-		}
-		h1{
-			color: #fff;
-			font-weight: 700;
-			font-size: 36px;
-			text-align: center;
-			margin: 2rem 0;
-		}
-	</style>
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 <body>
-	<div class="container" style="max-width: 1440px; margin: 0 auto; padding-bottom: 300px;">
-		<h1>Форма 1</h1>
-		<style>
-			.form{
-				display: flex;
-				flex-direction: column;
-				background: #fff;
-				border: 5px solid #FDE9E9;
-				border-radius: 5px;
-				align-items: center;
-				padding: 20px;
-				max-width: 568px;
-				margin: 0 auto;
-			}
-			.form__img img{
-				width: 90px;
-			}
-			.form__title{
-				font-size: 24px;
-				font-weight: 700;
-				margin: 1rem 0;
-				text-align: center;
-			}
-			.form__subtitle{
-				font-size: 18px;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			.form__subtitle b{
-				color: #E74C3C;
-			}
-			.form label input{
-				border: 1px solid #E6E6E6;
-				border-radius: 2px;
-				padding: 5px 10px;
-				margin-bottom: 5px;
-				font-size: 18px;
-				width: 280px;
-				transition-duration: 0.5s;
-			}
-			.form label input:focus{
-				border: 1px solid #c0c0c0;
-			}
-			.form label p{
-				padding: 5px 0;
-			}
-			.form__submit{
-				background: #2D52E3;
-				color: #fff;
-				font-weight: 700;
-				font-size: 18px;
-				border-radius: 7px;
-				padding: 10px 30px;
-				width: 280px;
-				margin-top: 1rem;
-				transition-duration: 0.2s;
-			}
-			.form__submit:hover{
-				background: #1e45e1;
-			}
-		</style>
-		<form class="form" action="https://sendsay.ru/form/x_1660300336806656/3" method="post">
-			<div class="form__img">
-				<img src="img/email.png" alt="">
+	<div class="container-fluid">
+		<div class="row auth">
+			<div class="col-xl-6 col-lg-5 col-12 auth-bg">
+				<img src="img/logo.png" alt="">
 			</div>
-			<div class="form__title">Что бы такого съесть, чтобы похудеть?</div>
-			<div class="form__subtitle">Подпишитесь на рассылку и получите <br> <b>ПП на меню на неделю</b> <br> бесплатно</div>
-			<label>
-				<p>Email *</p>
-				<input type="email" placeholder="Введите ваш email" name="_member_email" required>
-			</label>
-			<label>
-				<p>Имя</p>
-				<input type="name" placeholder="Ваше имя" name="q752">
-			</label>
-			<button class="form__submit" type="submit" name="bt_save">Забрать меню бесплатно</button>
-		</form>
-		<h1>Рассылка 1</h1>
-		<style>
-			.mailing{
-				display: flex;
-				justify-content: space-between;
-				background: #E6E6E6;
-				padding: 20px 15px;
-				border-radius: 7px;
-				align-items: center;
-			}
-			.mailing__img{
-				padding-left: 20px;
-			}
-			.mailing__img img{
-				width: 115px;
-			}
-			.mailing__title{
-				font-size: 30px;
-				color: #0E0E0F;
-				padding-bottom: 10px;
-			}
-			.mailing__subtitle{
-				color: #696C7C;
-				margin-bottom: 40px;
-			}
-			.mailing__button{
-				background: #454CEE;
-				color: #ffffff;
-				border-radius: 4px;
-				padding: 10px 40px;
-				margin-top: 20px;
-				transition-duration: 0.2s;
-			}
-			.mailing__button:hover{
-				background: #2f38ec;
-			}
-			@media(max-width: 568px){
-				.mailing__title{
-				font-size: 24px;
-				}
-				.mailing__subtitle{
-				font-size: 14px;
-				}
-			}
-			@media(max-width: 400px){
-				.mailing{
-					flex-direction: column;
-				}
-				.mailing__img{
-					order: 1;
-					padding: 0;
-				}
-				.mailing__text{
-					order: 2;
-					text-align: center;
-				}
-			}
-		</style>
-		<div class="mailing">
-			<div class="mailing__text">
-				<div class="mailing__title">Компьюнити теперь в Телеграм</div>
-				<div class="mailing__subtitle">Подпишитесь и будьте в курсе последних IT-новостей</div>
-				<a href="#" class="mailing__button">Подписаться</a>
-			</div>
-			<div class="mailing__img">
-				<img src="img/telegram.svg" alt="">
-			</div>
-		</div>
-		<h1>Блок новостей</h1>
-		<style>
-			.news{
-				background: #fff;
-				display: flex;
-				justify-content: space-between;
-				padding: 10px;
-				border-radius: 7px;
-				align-items: center;
-				box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
-				margin: 1rem auto;
-				max-width: 750px;
-			}
-			.news__arrow {
-				padding: 0 10px;
-			}
-			.news__body{
-				display: flex;
-				align-items: center;
-			}
-			.news__img{
-				padding-right: 10px;
-			}
-			.news__title{
-				font-weight: 700;
-				color: #0E0E0F;
-			}
-			.news__subtitle{
-				color: #696C7C;
-			}
-		</style>
-		<a class="news" href="#">
-			<div class="news__body">
-				<div class="news__img">
-					<img src="img/telegram-news.png" alt="" width="38px">
+			<div class="col-xl-6 col-lg-7 col-12 auth__content">
+				<div class="row">
+					<div class="col-sm-8 col-12 offset-sm-2">
+						<a class="auth__back" href="/">
+							<img src="img/back.svg" alt="">
+							Вернуться
+						</a>
+						<div class="auth__body">
+							<div class="auth__tabs">
+								<div class="auth__tabs-up">
+									<input type="radio" name="tab-btn" id="tab-1" onclick="openTab('auth','tab-1')" class="auth__tabs-up-btn" checked>
+									<label for="tab-1">Авторизация</label>
+									<input type="radio" name="tab-btn" id="tab-2" onclick="openTab('signup','tab-2')">
+									<label for="tab-2">Регистрация</label>
+								</div>
+
+								<div class="auth__tabs-tab active" id="auth">
+									<form action="#" method="post" class="auth__form" id="auth-form">
+										<input type="email" name="email" placeholder="Электронная почта" class="auth__input" required>
+										<div class="password">
+											<input type="password" class="auth__input" placeholder="Введите пароль" id="login-pass" name="password" required>
+											<a href="#" class="password-control" onclick="return show_hide_password(this,'login-pass')"></a>
+										</div>
+										<a href="#" class="auth__forgot-p">Забыли пароль ?</a>
+										<button type="submit" class="auth__button">Войти</button>
+										<p class="auth__form-undertext">У вас нет личного кабинета ? <br><span onclick="openTab('signup', 'tab-2');">Зарегистрируйтесь сейчас</span></p>
+									</form>
+								</div>
+								<div class="auth__tabs-tab" id="signup">
+									<form action="/thx.html" method="post" class="auth__form" id="reg-form">
+										<input type="email" name="email" placeholder="Электронная почта" class="auth__input" id="reg-email">
+										<div class="password">
+											<input type="password" class="auth__input" placeholder="Введите пароль" id="reg-pass" name="password" autocomplete="new-password" required >
+											<a href="#" class="password-control" onclick="return show_hide_password(this,'reg-pass')"></a>
+										</div>
+										<div class="password">
+											<input type="password" class="auth__input" placeholder="Повторите пароль" id="repeat-pass" name="password" required autocomplete="new-password">
+											<a href="#" class="password-control" onclick="return show_hide_password(this,'repeat-pass')"></a>
+										</div>
+										<button type="submit" class="auth__button" id="reg-btn" onclick="checkRegistration();">Регистрация</button>
+										<p class="auth__form-undertext">Уже есть аккаунт? <br><span onclick="openTab('auth', 'tab-1');">Войти в кабинет</span></p>
+									</form>
+								</div>
+							</div>
+							<div class="auth__forgot">
+								<img src="img/locked.svg" class="forgot__img" alt="" width="86px">
+								<p class="auth__p" style="margin-bottom: 20px">Восстановление пароля</p>
+									<input type="email" class="auth__input" placeholder="E-mail">
+									<button type="submit" class="auth__button">Продолжить</button>
+							</div>
+							<div class="auth__forgot-2">
+								<img src="img/email.svg" class="forgot__img" alt="" width="86px">
+								<p class="auth__p">Восстановление пароля</p>
+								<p class="auth__p-under">
+									Ссылка на сброс пароля была отправлена!
+								</p>
+								<button class="auth__button" href="#">Выслать повторно письмо <br>
+								для подтверждения
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="news__text">
-					<div class="news__title">Подпишись на Telegram РБК</div>
-					<div class="news__subtitle">Будьте в курсе последних новостей даже в условиях блокировок</div>
-				</div>
-			</div>
-			<div class="news__arrow">
-				<img src="img/arrow_right.svg" alt="" width="16px">
-			</div>
-		</a>
-		<h1>Рассылка 2</h1>
-		<style>
-			.stat{
-				background-color: #F9F9F9;
-				border-radius: 10px;
-				background-image: url("img/telega.png");
-				background-position: 110% 50%;
-				background-repeat: no-repeat;
-				background-size:  contain;
-				max-width: 768px;
-			}
-			.stat__body{
-				padding: 30px;
-				font-weight: 700;
-			}
-			.stat__title{
-				font-size: 30px;
-				padding-bottom: 20px;
-			}
-			.stat__form{
-				padding-top: 20px;
-			}
-			.stat__form input{
-				border: 1px solid rgb(200,200,200);
-				border-radius: 4px;
-				padding: 7px 10px;
-				color: #0E0E0F;
-				margin-right: 10px;
-				transition-duration: 0.5s;
-				font-size: 18px;
-			}
-			.stat__form input::placeholder{
-				color: #0E0E0F;
-			}
-			.stat__button{
-				background: #000;
-				height: 34px;
-				width: 34px;
-				border-radius: 4px;
-			}
-			.stat__button img{
-				display: block;
-				margin: 0 auto;
-			}
-			.stat__form input:focus{
-				border: 1px solid rgb(100,100,100);
-			}
-			.stat__mobile-img{
-				display: none;
-			}
-			@media(max-width: 576px){
-				.stat{
-					background-image: none;
-					text-align: center;
-				}
-				.stat__mobile-img{
-					display: block;
-					text-align: center;
-					padding-bottom: 10px;
-				}
-				.stat__mobile-img img{
-					width: 90px;
-				}
-				.stat__form{
-					display: flex;
-					flex-direction: column;
-				}
-				.stat__form input{
-					width: 280px;
-					margin: 0 auto;
-					margin: 0 auto 10px auto;
-				}
-				.stat__button{
-					width: 280px;
-					margin: 0 auto;
-					margin-top: 10px;
-					height: 39px;
-				}
-			}
-		</style>
-		<div class="stat">
-			<div class="stat__body">
-				<div class="stat__mobile-img">
-					<img src="img/telega.png" alt="">
-				</div>
-				<div class="stat__title">Хотите получать дайджест статей ?</div>
-				<div class="stat__subtitle">Одно письмо с лучшими материалами за неделю. <br> Подписывайтесь, чтобы ничего не упустить.</div>
-				<form action="https://sendsay.ru/form/x_1660300336806656/3" method="post" class="stat__form">
-					<input type="name" placeholder="Как вас зовут?" name="q752">
-					<input type="email" placeholder="E-mail" name="_member_email">
-					<button class="stat__button" type="submit" name="bt_save">
-						<img src="img/arrow-right2.svg" alt="">
-					</button>
-				</form>
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
