@@ -1,87 +1,554 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/null.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row auth">
-			<div class="col-xl-6 col-lg-5 col-12 auth-bg">
-				<img src="img/logo.png" alt="">
-			</div>
-			<div class="col-xl-6 col-lg-7 col-12 auth__content">
-				<div class="row">
-					<div class="col-sm-8 col-12 offset-sm-2">
-						<a class="auth__back" href="/">
-							<img src="img/back.svg" alt="">
-							Вернуться
-						</a>
-						<div class="auth__body">
-							<div class="auth__tabs">
-								<div class="auth__tabs-up">
-									<input type="radio" name="tab-btn" id="tab-1" onclick="openTab('auth','tab-1')" class="auth__tabs-up-btn" checked>
-									<label for="tab-1">Авторизация</label>
-									<input type="radio" name="tab-btn" id="tab-2" onclick="openTab('signup','tab-2')">
-									<label for="tab-2">Регистрация</label>
-								</div>
+<html lang="ru">
+	<head>
+	    <meta name="keywords" content="инвестиционный фонд" />
+		<meta name="description" content="Первый в СНГ токенизированный инвестиционный фонд">
+		<title>Первый в СНГ токенизированный инвестиционный фонд</title>
+		<!--  Charset -->
+		<meta charset="utf-8">
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no">
+		<!-- Main stylesheet -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- RF Dewi font -->
+		<link rel="stylesheet" href="rfdewi/stylesheet.css" />
+		<!-- Aeroport font -->
+		<link rel="stylesheet" href="aeroport/stylesheet.css" />
+		<!-- Page scripts -->
+		<script src="index.js" defer></script>
+		<link rel="icon" type="image/png" href="img/logo_mark_color.png" />
+	</head>
+	<body id="index">
+		<div id="main_top" class="block">
+			<img src="img/logo_full_color.png" class="header_logo"/>
+			<a href="whitepaper.html" class="nav_link">Whitepaper</a>
+		</div>
+		<div id="head" class="block">
+			<!--<img src="img/btc.png" />-->
+			<img src="img/main_coin.webp" />
+			<div class="header_text">
+				<h1 style="color: #d7b369">
+					Инвестиционный фонд EMIVN
+				</h1>
+				<p>
+				Первый в СНГ токенизированный инвестиционный фонд
+				</p>
 
-								<div class="auth__tabs-tab active" id="auth">
-									<form action="#" method="post" class="auth__form" id="auth-form">
-										<input type="email" name="email" placeholder="Электронная почта" class="auth__input" required>
-										<div class="password">
-											<input type="password" class="auth__input" placeholder="Введите пароль" id="login-pass" name="password" required>
-											<a href="#" class="password-control" onclick="return show_hide_password(this,'login-pass')"></a>
-										</div>
-										<a href="#" class="auth__forgot-p">Забыли пароль ?</a>
-										<button type="submit" class="auth__button">Войти</button>
-										<p class="auth__form-undertext">У вас нет личного кабинета ? <br><span onclick="openTab('signup', 'tab-2');">Зарегистрируйтесь сейчас</span></p>
-									</form>
-								</div>
-								<div class="auth__tabs-tab" id="signup">
-									<form action="/thx.html" method="post" class="auth__form" id="reg-form">
-										<input type="email" name="email" placeholder="Электронная почта" class="auth__input" id="reg-email">
-										<div class="password">
-											<input type="password" class="auth__input" placeholder="Введите пароль" id="reg-pass" name="password" autocomplete="new-password" required >
-											<a href="#" class="password-control" onclick="return show_hide_password(this,'reg-pass')"></a>
-										</div>
-										<div class="password">
-											<input type="password" class="auth__input" placeholder="Повторите пароль" id="repeat-pass" name="password" required autocomplete="new-password">
-											<a href="#" class="password-control" onclick="return show_hide_password(this,'repeat-pass')"></a>
-										</div>
-										<button type="submit" class="auth__button" id="reg-btn" onclick="checkRegistration();">Регистрация</button>
-										<p class="auth__form-undertext">Уже есть аккаунт? <br><span onclick="openTab('auth', 'tab-1');">Войти в кабинет</span></p>
-									</form>
-								</div>
+				<div class="head_buttons">
+				    <a href="whitepaper.html" class="nav_link btn">
+					    WHITEPAPER
+				    </a>
+    				<button id="b_buy" class="nav_link btn" onclick="document.location='https://tokensale.emivn.io/register'">
+    					Купить EMIVN
+    				</button>
+    			</div>
+			</div>
+		</div>
+		<div id="directions" class="block">
+			<div style="color: #d7b369" class="foldertop">
+				Направления инвестирования EMIVN
+			</div>
+			<div>
+				<h3>
+				    Де&shy;ят&shy;ель&shy;ность ИФ EMIVN на&shy;прав&shy;ле&shy;на на по&shy;лу&shy;че&shy;ние на&shy;ши&shy;ми ин&shy;вес&shy;то&shy;ра&shy;ми мак&shy;си&shy;маль&shy;ной при&shy;бы&shy;ли и ни&shy;ве&shy;ли&shy;ро&shy;ва&shy;ние рис&shy;ков. Сре&shy;ди ос&shy;нов&shy;ных нап&shy;рав&shy;ле&shy;ний ин&shy;вес&shy;ти&shy;ро&shy;ва&shy;ния мож&shy;но вы&shy;де&shy;лить:
+				</h3>
+				<ul>
+                    <li>
+                        IT про&shy;дук&shy;ты - об&shy;мен&shy;ник, VR-иг&shy;ра, собст&shy;вен&shy;ная P2P-плат&shy;фор&shy;ма EMIVN;
+                    </li>
+                    <li>
+                        ар&shy;бит&shy;раж кри&shy;пто&shy;ва&shy;лют, тор&shy;гов&shy;ля циф&shy;ро&shy;вы&shy;ми мо&shy;не&shy;та&shy;ми (Bitcoin, Ethereum, USDT) с це&shy;лью из&shy;вле&shy;че&shy;ния при&shy;бы&shy;ли за счёт кур&shy;со&shy;вой раз&shy;ни&shy;цы;
+                    </li>
+                    <li>
+                        трей&shy;динг, при&shy;об&shy;ре&shy;те&shy;ние низ&shy;ко&shy;рис&shy;ко&shy;вых ак&shy;ти&shy;вов;
+                    </li>
+                    <li>
+                        ин&shy;вес&shy;ти&shy;ро&shy;ва&shy;ние в стар&shy;та&shy;пы, про&shy;шед&shy;шие фун&shy;да&shy;мен&shy;таль&shy;ный ау&shy;дит;
+                    </li>
+                    <li>
+                        ин&shy;вес&shy;ти&shy;ро&shy;ва&shy;ние в об&shy;ъек&shy;ты не&shy;дви&shy;жи&shy;мос&shy;ти, са&shy;мо&shy;сто&shy;ят&shy;ель&shy;ное воз&shy;ве&shy;де&shy;ние жи&shy;лых об&shy;ъек&shy;тов и об&shy;ъек&shy;тов ком&shy;мер&shy;чес&shy;кой не&shy;дви&shy;жи&shy;мос&shy;ти.
+                    </li>
+				</ul>
+				<button id="b_buy" class="nav_link btn" onclick="document.location='https://tokensale.emivn.io/register'">
+					Купить EMIVN
+				</button>
+			</div>
+		</div>
+		<div id="tokensale" class="block">
+			<div class="mobile_bordering">
+    			<h1 style="color: #d7b369;text-align:center" class="custom_h1">
+    				<centr>Tokensale инвестиционного токена EMIVN</centr>
+    			</h1>
+    			<div id="status" class="block white">
+        			<div>
+        				<div>Старт проекта:</div>
+        				<div>Сентябрь 2023</div>
+        			</div>
+        			<div>
+        				<div>Фиатная валюта:</div>
+        				<div>RUB</div>
+        			</div>
+        			<div class="last">
+        				<div>Эмиссия:</div>
+        				<div>100 000 000 EMIVN</div>
+        			</div>
+        		</div>
+        	</div>
+		</div>
+		
+		<div id="stages" class="block white">
+			<h2>
+				Этапы проведения ICO инвестиционного токена EMIVN
+			</h2>
+			<span class="stages--label mobile">ICO phase — Start TGE</span>
+			<div>
+				<div class="stages--item">
+					<div>
+						<img src="img/i_pc.svg" />
+					</div>
+					<div>
+						<div>1 Раунд</div>
+						<div>100 руб.</div>
+					</div>
+				</div>
+				<div class="stages--item">
+					<div>
+						<img src="img/i_cloud.svg" />
+					</div>
+					<div>
+						<div>2 раунд</div>
+						<div>150 руб.</div>
+					</div>
+				</div>
+				<div class="stages--item">
+					<div>
+						<img src="img/i_btc.svg" />
+					</div>
+					<div>
+						<div>3 раунд</div>
+						<div>225 руб.</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="img/i_servers.svg" />
+					</div>
+					<div>
+						<div>4 раунд</div>
+						<div>337,5 руб.</div>
+					</div>
+				</div>
+				<div>
+					<button id="b_buy" class="nav_link btn" onclick="document.location='https://tokensale.emivn.io/register'">Купить EMIVN</button>
+				</div>
+			</div>
+			<p>
+			ICO — Старт TGE
+			</p>
+		</div>
+
+		<div id="roadmap" class="block">
+			<div style="color: #d7b369" class="foldertop">
+				Дорожная карта
+			</div>
+			<div>
+				<div>
+					<div>Сентябрь 2023 года</div>
+					<div>Вы&shy;пуск то&shy;ке&shy;на EMIVN, за&shy;пуск про&shy;ек&shy;та то&shy;ке&shy;ни&shy;зи&shy;ро&shy;ван&shy;но&shy;го ин&shy;вес&shy;ти&shy;ци&shy;он&shy;но&shy;го фон&shy;да.</div>
+				</div>
+				<div>
+					<div>Декабрь 2023 года</div>
+					<div>За&shy;пуск собст&shy;вен&shy;ной P2P плат&shy;фор&shy;мы</div>
+				</div>
+				<div>
+					<div>Февраль 2024 года</div>
+					<div>Прив&shy;ле&shy;че&shy;ние в ИФ EMIVN до 500 000 000 руб&shy;лей ин&shy;вес&shy;ти&shy;ций. Ин&shy;вес&shy;ти&shy;ро&shy;ва&shy;ние в пер&shy;спек&shy;тив&shy;ные стар&shy;та&shy;пы.</div>
+				</div>
+				<div>
+					<div>Август 2024 года</div>
+					<div>За&shy;пуск VR-игры EMIVN RA&shy;CE, уни&shy;каль&shy;но&shy;го про&shy;дук&shy;та, ко&shy;то&shy;ро&shy;му нет ана&shy;ло&shy;гов в ми&shy;ре.</div>
+				</div>
+				<div>
+					<div>Август 2025 года</div>
+					<div>Cоз&shy;да&shy;ние стро&shy;ит&shy;ель&shy;ной ком&shy;па&shy;нии, спе&shy;ци&shy;али&shy;зи&shy;ру&shy;ющей&shy;ся на стро&shy;итель&shy;стве и про&shy;да&shy;же жи&shy;лья ком&shy;форт-клас&shy;са. Мас&shy;шта&shy;би&shy;ро&shy;ва&shy;ние стро&shy;итель&shy;ной ком&shy;па&shy;нии до ли&shy;де&shy;ра в сво&shy;ем сег&shy;мен&shy;те.</div>
+				</div>
+			</div>
+		</div>
+		<div id="tokenomics" class="block white">
+			<div class="mobile_bordering custom_white" style="padding:10px;">
+    			<h1 >Токеномика EMIVN</h1>
+    			<div class="inner">
+    				<div>
+    					<span>10%</span>
+    					<div>Команда</div>
+    				</div>
+    				<div>
+    					<span>10%</span>
+    					<div>Маркетинг и реклама</div>
+    				</div>
+    				<div>
+    					<span>10%</span>
+    					<div>Инвестирование</div>
+    				</div>
+    				<div>
+    					<span>10%</span>
+    					<div>Presale</div>
+    				</div>
+    				<div>
+    					<span>10%</span>
+    					<div>ICO</div>
+    				</div>
+    				<div class="twofive skew">
+    					<span>25%</span>
+    					<div>Вознаграждение Proof-of-Stake</div>
+    				</div>
+    				<div class="twofive">
+    					<span>25%</span>
+    					<div>Биржа</div>
+    				</div>
+    			</div>
+    		</div>
+		</div>
+
+		<div id="ico" class="block white">
+			<h1>ICO токена EMIVN</h1>
+			<div class="left">ОБЩИЙ СБОР:&nbsp;&nbsp;2 030 750 000 РУБ.</div>
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td>Раунд</td>
+					<td>Цена</td>
+					<td>Количество EMIVN</td>
+					<td>Статус</td>
+					<td>Общий сбор</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>1</td>
+					<td class="table_mobile" data-label="Цена">100 руб.</td>
+					<td class="table_mobile" data-label="Количество EMIVN">2 500 000</td>
+					<td class="table_mobile" data-label="Статус">В ожидании</td>
+					<td class="table_mobile" data-label="Общий сбор">250 000 000 руб.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td >2</td>
+					<td class="table_mobile" data-label="Цена">150 руб.</td>
+					<td class="table_mobile" data-label="Количество EMIVN">2 500 000</td>
+					<td class="table_mobile" data-label="Статус">В ожидании</td>
+					<td class="table_mobile" data-label="Общий сбор">375 000 000 руб.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td >3</td>
+					<td class="table_mobile" data-label="Цена">225 руб.</td>
+					<td class="table_mobile" data-label="Количество EMIVN">2 500 000</td>
+					<td class="table_mobile" data-label="Статус">В ожидании</td>
+					<td class="table_mobile" data-label="Общий сбор">562 500 000 руб.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td >4</td>
+					<td class="table_mobile" data-label="Цена">337,5 руб.</td>
+					<td class="table_mobile" data-label="Количество EMIVN">2 500 000</td>
+					<td class="table_mobile" data-label="Статус">В ожидании</td>
+					<td class="table_mobile" data-label="Общий сбор">843 750 000 руб.</td>
+				</tr>
+			</table>
+
+			<span class="general-collection	mobile">
+				<span>Общий сбор:</span>
+				<span>2 030 750 000 руб.</span> 
+			</span>
+
+			<div class="foldertop">
+				Информационное бюро
+			</div>
+		</div>
+		<div id="info" class="block framed">
+		    <div class="mobile_bordering_white">
+    		    <div class="info_title mobile">
+    				Информационное бюро
+    			</div>
+    			<div class="info_first">
+    				<ul>
+    					<li>В рам&shy;ках про&shy;ве&shy;де&shy;ния ICO  ин&shy;вес&shy;то&shy;ры смо&shy;гут при&shy;об&shy;ре&shy;тать то&shy;ке&shy;ны EMIVN в 4 эта&shy;па.</li>
+    					<li>Пос&shy;ле по&shy;куп&shy;ки то&shy;ке&shy;ны EMIVN бу&shy;дут на&shy;прав&shy;ле&shy;ны на стей&shy;кинг, в за&shy;ви&shy;си&shy;мос&shy;ти от выб&shy;ран&shy;ного ло&shy;кап пе&shy;рио&shy;да, с це&shy;лью по&shy;лу&shy;че&shy;ния ин&shy;вес&shy;то&shy;ра&shy;ми до&shy;ход&shy;нос&shy;ти, кра&shy;тно пре&shy;вы&shy;шаю&shy;щей ры&shy;ноч&shy;ные бан&shy;ковс&shy;кие пред&shy;ло&shy;же&shy;ния.</li>
+    					<li>Сто&shy;имо&shy;сть 1 EMIVN на пер&shy;вом раун&shy;де ICO сос&shy;та&shy;вит 100 руб&shy;лей. Стои&shy;мость 1 EMIVN на каж&shy;дом пос&shy;ле&shy;дую&shy;щем раун&shy;де бу&shy;дет уве&shy;ли&shy;че&shy;на на 50%.</li>
+    				</ul>
+    			</div>
+    			<div class="info_last">
+    				<p>
+    				<b> EMIVN</b> – ин&shy;вес&shy;ти&shy;цион&shy;ный то&shy;кен, вы&shy;пу&shy;щен&shy;ный ком&shy;па&shy;нией EMIVN. Ос&shy;нов&shy;ные це&shy;ли то&shy;ке&shy;ни&shy;за&shy;ции зак&shy;лю&shy;ча&shy;ют&shy;ся в мас&shy;шта&shy;би&shy;ро&shy;ва&shy;нии фон&shy;да, а так&shy;же в дос&shy;ти&shy;же&shy;нии мак&shy;си&shy;маль&shy;ной бе&shy;зо&shy;пас&shy;но&shy;сти для на&shy;ших ин&shy;вес&shy;то&shy;ров. 
+    				<b>EMIVN</b> вы&shy;пу&shy;щен в се&shy;ти Bi&shy;nan&shy;ce Smart Cha&shy;in. Эмис&shy;сия 100 000 000 EMIVN.
+    				</p>
+    				<p>
+    				<b>Ад&shy;рес конт&shy;рак&shy;та то&shy;ке&shy;на:</b><br>
+    				<a href="https://bscscan.com/address/0x6966b2a543E34E69Cf1c7840137FfD2d8a09e834" target="_blank" style="color:#d7b369">0x6966b2a543E34E69Cf1c7840137FfD2d8a09e834</a>
+    				</p>
+    			</div>
+    		</div>
+		</div>
+
+		
+		<div id="invest" class="block">
+		    <div class="mobile_bordering">
+    			<div class="invest_first">
+    				<div style="color: #d7b369" class="foldertop">
+    					Как стать нашим инвестором?
+    				</div>
+    				<div class="middle">
+    					<h2>ИФ EMIVN пред&shy;ла&shy;га&shy;ет ин&shy;вес&shy;то&shy;рам по&shy;нят&shy;ные ус&shy;ло&shy;вия сот&shy;руд&shy;ни&shy;чес&shy;тва</h2>
+    					<p>
+    					Ин&shy;вес&shy;ти&shy;ци&shy;он&shy;ный фонд EMIVN пре&shy;дос&shy;тав&shy;ля&shy;ет по&shy;нят&shy;ные и дос&shy;туп&shy;ные ус&shy;ло&shy;вия для ин&shy;вес&shy;ти&shy;ро&shy;ва&shy;ния де&shy;неж&shy;ных средств.
+    					Ин&shy;вес&shy;то&shy;ры по&shy;ку&shy;па&shy;ют то&shy;ке&shy;ны фон&shy;да EMIVN (EMIVN).
+    					При&shy;об&shy;ре&shy;тен&shy;ные то&shy;ке&shy;ны фон&shy;да EMIVN (EMIVN) нап&shy;рав&shy;ля&shy;ют&shy;ся на стей&shy;кинг в за&shy;ви&shy;си&shy;мос&shy;ти от вы&shy;бран&shy;но&shy;го па&shy;ке&shy;та.
+    					Ин&shy;вес&shy;то&shy;ры по&shy;лу&shy;ча&shy;ют пас&shy;сив&shy;ную до&shy;ход&shy;ность, ко&shy;то&shy;рая, сто&shy;ит от&shy;ме&shy;тить, в ра&shy;зы вы&shy;ше стан&shy;дарт&shy;ных бан&shy;ков&shy;ских пред&shy;ло&shy;же&shy;ний.
+    					По&shy;лу&shy;чен&shy;ные от про&shy;да&shy;жи то&shy;ке&shy;нов EMIVN сред&shy;ства нап&shy;рав&shy;ля&shy;ют&shy;ся на стра&shy;те&shy;ги&shy;чес&shy;кое уп&shy;рав&shy;ле&shy;ние, то есть ин&shy;вес&shy;ти&shy;ру&shy;ют&shy;ся в раз&shy;лич&shy;ные про&shy;ек&shy;ты для за&shy;щи&shy;ты ак&shy;ти&shy;вов и ни&shy;ве&shy;ли&shy;ро&shy;ва&shy;ния рис&shy;ков.
+    					</p>
+    				</div>
+    				<div class="white mobile-lightgreen">
+    					<div class="mobile-lightgreen_title mobile">Пакеты</div>
+    					<div class="invest-table">
+    					    <div class="tablet">
+        						<div class="table-item">
+        							<p>Пакеты</p>
+        							<p>Сроки</p>
+        							<p>Доходность*</p>
+        						</div>
+        						<div class="bronze">
+        						    <p>BRONZE</p>
+        							<p data-label="Срок">3 месяца</p>
+        							<p data-label="Доходность">6%</p>
+        						</div>
+        						<div class="silver">
+        							<p>SILVER</p>
+        							<p data-label="Срок">6 месяцев</p>
+        							<p data-label="Доходность">15%</p>
+        						</div>
+        						<div class="gold">
+        							<p>GOLD</p>
+        							<p data-label="Срок">12 месяцев</p>
+        							<p data-label="Доходность">38%</p>
+        						</div>
+        						<div class="platinum">
+        							<p>PLATINUM</p>
+        							<p data-label="Срок">24 месяца</p>
+        							<p data-label="Доходность">100%</p>
+        						</div>
+        					</div>
+    					</div>
+    				</div>
+    			</div>
+	
+    			<div class="invest_last">
+    				<h2>Пос&shy;ле ок&shy;он&shy;ча&shy;ния пе&shy;рио&shy;да стей&shy;кин&shy;га ин&shy;вес&shy;тор мо&shy;жет:</h2>
+    				<ul>
+    					<li>Про&shy;дать то&shy;ке&shy;ны <b>EMIVN</b> в ИФ EMIVN дру&shy;гим участ&shy;ни&shy;кам;</li>
+    					<li>Ре&shy;ин&shy;вес&shy;ти&shy;ро&shy;вать то&shy;ке&shy;ны <b>EMIVN</b> в ИФ EMIVN, выб&shy;рав под&shy;хо&shy;дя&shy;щий па&shy;кет стей&shy;кин&shy;га.</li>
+    					<li>Об&shy;ме&shy;нять то&shy;ке&shy;ны EMIVN в об&shy;мен&shy;ни&shy;ке <a href="https://emivn-exchanger.io" target="_blank" style="color:#d7b369">https://emivn-exchanger.io</a></li>
+    				</ul>
+    				<p>
+    				Важ&shy;ней&shy;шим ас&shy;пек&shy;том своей дея&shy;те&shy;льно&shy;сти для ИФ EMIVN яв&shy;ля&shy;ет&shy;ся обес&shy;пе&shy;че&shy;ние га&shy;ран&shy;ти&shy;ро&shy;ван&shy;ной при&shy;бы&shy;ли ин&shy;вес&shy;то&shy;рам от выб&shy;ран&shy;но&shy;го па&shy;ке&shy;та стей&shy;кин&shy;га.
+    				Смарт конт&shy;ракт стей&shy;кин&shy;га яв&shy;ля&shy;ет&shy;ся пуб&shy;лич&shy;ным. Каж&shy;дый же&shy;лаю&shy;щий мо&shy;жет про&shy;ве&shy;рить ло&shy;ги&shy;ку ра&shy;бо&shy;ты <a href="https://bscscan.com/address/0x6966b2a543E34E69Cf1c7840137FfD2d8a09e834" target="_blank" style="color:#d7b369">смарт кон&shy;трак&shy;та</a> и ис&shy;клю&shy;чить воз&shy;мож&shy;ность фро&shy;да.
+    				</p>
+    				<p>
+    				*Вы по&shy;лу&shy;чи&shy;те до&shy;ход&shy;ность по ис&shy;те&shy;че&shy;нии сро&shy;ка стей&shy;кин&shy;га
+    				</p>    				
+    			</div>
+    		</div>
+		</div>
+		
+		<div class="block prefs">
+			<h1 style="color: #d7b369">Преференции для инвесторов</h1>
+			<div class="middle">
+				<div>
+					<div>1</div>
+					<div>Воз&shy;мож&shy;ность по&shy;куп&shy;ки  люк&shy;со&shy;вых спорт&shy;каров у парт&shy;неров фон&shy;да EMIVN за то&shy;ке&shy;ны EMIVN ниже рыночной стоимости до 20%;</div>
+				</div>
+				<div>
+					<div>2</div>
+					<div>Членство в бизнес-клубе EMIVN, участие в мероприятиях клуба;</div>
+				</div>
+				<div class="last">
+					<div>3</div>
+					<div>Воз&shy;мож&shy;ность при&shy;об&shy;ре&shy;те&shy;ния объек&shy;тов не&shy;дви&shy;жи&shy;мо&shy;го иму&shy;щест&shy;ва у парт&shy;не&shy;ров фон&shy;да EMIVN за то&shy;ке&shy;ны EMIVN ни&shy;же ры&shy;ноч&shy;ной стои&shy;мос&shy;ти на 10-15%;</div>
+				</div>
+			</div>
+					<div class="block prefs">
+			<div class="middle">
+				<div>
+					<div>4</div>
+					<div>Возможность пользоваться продуктами EMIVN на специальных условиях;</div>
+				</div>
+				<div>
+					<div>5</div>
+					<div>Воз&shy;мож&shy;ность воз&shy;ве&shy;де&shy;ния объек&shy;тов нед&shy;ви&shy;жи&shy;мо&shy;сти раз&shy;ного клас&shy;са за то&shy;кены EMIVN на вы&shy;год&shy;ных ус&shy;ло&shy;ви&shy;ях;</div>
+				</div>
+				<div class="last">
+					<div>6</div>
+					<div>Возможность одними из первых пользоваться VR-игры EMIVN RACE, аналогов которой нет в мире.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block prefs">
+			<div class="middle">
+				<div class="thumb"></div>
+				<div>
+					<div>7</div>
+					<div>Воз&shy;мож&shy;ность воз&shy;ве&shy;де&shy;ния объек&shy;тов нед&shy;ви&shy;жи&shy;мо&shy;сти раз&shy;ного клас&shy;са за то&shy;кены EMIVN на вы&shy;год&shy;ных ус&shy;ло&shy;ви&shy;ях;</div>
+				</div>
+				<div class="thumb"></div>
+			</div>
+		</div>
+		<h2>В даль&shy;ней&shy;шем ко&shy;ли&shy;чес&shy;тво пре&shy;фе&shy;рен&shy;ций бу&shy;дет толь&shy;ко рас&shy;ши&shy;ря&shy;ться, и мы бу&shy;дем пред&shy;ла&shy;гать но&shy;вые уни&shy;каль&shy;ные воз&shy;мож&shy;ности для на&shy;ших парт&shy;нё&shy;ров!</h2>
+
+		<div id="team" class="block full" style="background:#000">
+			<h1>Команда</h1>
+		<div style="background: #fff;color:#000;padding:30px">
+			    <h2>Основатели ИФ EMIVN</h2>
+			<div>
+				<div>
+					<div class="team-item-img" style="background-image: url(img/staff_si.jpg);"></div>
+						<!-- <img src="img/staff_si.jpg" /> -->
+						<div>
+							<div>Семён<br>Ивницкий</div>
+							<div>
+								Сооснователь ИФ EMIVN.
+								Биз&shy;нес&shy;мен, ко&shy;то&shy;рый отк&shy;рыл бо&shy;лее 20 биз&shy;не&shy;сов в диа&shy;мет&shy;ра&shy;льно раз&shy;ных сфе&shy;рах. В нас&shy;тоя&shy;щее вре&shy;мя за&shy;ни&shy;мает&shy;ся раз&shy;ви&shy;тием IT про&shy;дук&shy;тов - VR-иг&shy;ры EMIVN-RA&shy;CE, об&shy;мен&shy;ника EMIVN-EX&shy;CHAN&shy;GER, соб&shy;ствен&shy;ной P2P плат&shy;фор&shy;мы EMIVN.
 							</div>
-							<div class="auth__forgot">
-								<img src="img/locked.svg" class="forgot__img" alt="" width="86px">
-								<p class="auth__p" style="margin-bottom: 20px">Восстановление пароля</p>
-									<input type="email" class="auth__input" placeholder="E-mail">
-									<button type="submit" class="auth__button">Продолжить</button>
-							</div>
-							<div class="auth__forgot-2">
-								<img src="img/email.svg" class="forgot__img" alt="" width="86px">
-								<p class="auth__p">Восстановление пароля</p>
-								<p class="auth__p-under">
-									Ссылка на сброс пароля была отправлена!
-								</p>
-								<button class="auth__button" href="#">Выслать повторно письмо <br>
-								для подтверждения
-								</button>
+						</div>
+					</div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_er.jpg);"></div>
+						<!-- <img src="img/staff_er.jpg" /> -->
+						<div>
+							<div>Евгений<br>Рекутин</div>
+							<div>
+								Со&shy;ос&shy;но&shy;ва&shy;тель ИФ EMIVN, ком&shy;мер&shy;ческий ди&shy;рек&shy;тор фон&shy;да.
 							</div>
 						</div>
 					</div>
 				</div>
+				<h2>Команда ИФ EMIVN </h2>
+				<div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_ni.jpg);"></div>
+						<!-- <img src="img/staff_ni.jpg" /> -->
+						<div>
+							<div>Наталья<br>Иванова</div>
+							<div>
+								Ди&shy;рек&shy;тор ИФ EMIVN, спи&shy;кер. В прош&shy;лом топ-менеджер круп&shy;ных аг&shy;ро&shy;хол&shy;дин&shy;гов Рос&shy;сии.
+							</div>
+						</div>
+					</div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_ah.jpg);"></div>
+						<!-- <img src="img/staff_ah.jpg" /> -->
+						<div>
+							<div>Алексей<br>Хомера</div>
+							<div>
+								Гла&shy;ва служ&shy;бы бе&shy;зо&shy;пас&shy;нос&shy;ти ИФ EMIVN. Бо&shy;лее 20 лет ра&shy;бо&shy;тал в Про&shy;ку&shy;ра&shy;ту&shy;ре РФ.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div class="team-item-img" style="background-image: url(img/staff_vi.jpg);"></div>
+						<!-- <img src="img/staff_vi.jpg" /> -->
+						<div>
+							<div>Варвара<br>Иванова</div>
+							<div>
+								Спикер ИФ EMIVN.
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="team-item-img" style="background-image: url(img/staff_anna.png);"></div>
+						<!-- <img src="img/staff_ml.jpg" /> -->
+						<div>
+							<div>Алена<br>Пискова</div>
+							<div>
+								Спикер ИФ EMIVN.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_vt.jpg);"></div>
+						<!-- <img src="img/staff_vt.jpg" /> -->
+						<div>
+							<div>Вадим<br>Тершуков</div>
+							<div>
+								Арбитражный трейдер.
+							</div>
+						</div>
+					</div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_vk.jpg);"></div>
+						<!-- <img src="img/staff_vk.jpg" /> -->
+						<div>
+							<div>Владимир<br>Ким</div>
+							<div>
+								Арбитражный трейдер.
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2>Инвесторы ИФ EMIVN</h2>
+				<div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_sn.jpg);"></div>
+						<!-- <img src="img/staff_sn.jpg" /> -->
+						<div>
+							<div>Сергей<br>Николаев</div>
+							<div>
+								Инвестор ИФ EMIVN.
+							</div>
+						</div>
+					</div>
+					<div>
+					    <div class="team-item-img" style="background-image: url(img/staff_nk.jpg);"></div>
+						<!-- <img src="img/staff_nk.jpg" /> -->
+						<div>
+							<div>Николай<br>Кириллов</div>
+							<div>
+								Инвестор ИФ EMIVN.
+							</div>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</div>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+		<div class="with_us">
+			Связаться с нами
+		</div>
+		<!--<div id="mobile_bottom" class="block mobile">
+           <div class="mobile_bottom__block">
+        		<span>Связаться с нами</span>
+        		<div>
+        			<div><a href="#">Telegram</a></div>
+        			<div><a href="#">Email</a></div>
+        		</div>
+            </div>
+		</div>-->
+		<div id="main_bottom" class="block">
+			<img src="img/logo_full_color.png" />
+			<div class="main_bottom_right">
+			    <div class="bottom_contact">Связаться с нами</div>
+			    <a href="https://t.me/EMIVN_BOT" class="socials-item" target="_blank">
+	                <span class="socials-item-icon">
+	                    <img src="img/ico-tel.svg" alt="">
+	                </span>
+	            </a>
+	        </div>
+	        <a href="whitepaper.html" class="nav_link">Whitepaper</a>
+		</div>
+	</div>	
+	</body>
 </html>
