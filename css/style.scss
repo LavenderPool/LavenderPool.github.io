@@ -1,0 +1,39 @@
+@import "nullable";
+@import "header";
+@import "bootstrap-grid.min.css";
+@import "main";
+@import "for-whom";
+@import "oto-is";
+@import "conditions";
+@import "do";
+@import "footer";
+@import "gallery";
+@import "table";
+@import "calculate";
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media(max-width: 1200px) {
+        padding: 0 20px;
+    }
+}
+
+.title{
+    color: #00327F;
+    font-size: 36px;
+    font-weight: 700;
+
+    @media(max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+a, a:visited{
+    color: initial;
+}

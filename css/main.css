@@ -1,0 +1,29 @@
+.main h1 {
+  color: #00327F;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+.main p {
+  font-size: 18px;
+  margin: 30px 0;
+}
+.main button {
+  padding: 14px 16px;
+  background: #00327F;
+  border: none;
+  color: #fff;
+  width: 253px;
+}
+.main .col-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

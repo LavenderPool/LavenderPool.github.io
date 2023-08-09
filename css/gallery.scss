@@ -1,0 +1,49 @@
+.gallery{
+
+    .title{
+        margin-bottom: 50px;
+
+        @media(max-width: 576px) {
+            margin-top:50px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .col{
+        display: flex;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    &__body img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__address{
+        width: 100%;
+        height: 0%;
+        background: rgba(255,255,255,0.5);
+        position: relative;
+        transform: translateY(-52px);
+        padding: 18px 40px 34px;
+        z-index: 2;
+        font-weight: 700;
+
+        @media(max-width: 710px) {
+            font-size: 12px;
+        }
+    }
+}
+
+//margin bugfix na kostile
+@media(max-width: 710px) {
+    .kostil{
+        margin-bottom: -54px;
+    }
+}

@@ -1,0 +1,116 @@
+.conditions{
+    margin-top: 90px;
+
+    @media(max-width: 576px) {
+        margin-top: 40px;
+    }
+
+    .title{
+        margin-bottom: 55px;
+        @media(max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__body{
+        margin: 0 auto;
+        max-width: 990px;
+        padding-bottom: 50px;
+
+        background: #F6F6F6;
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+
+        @media(max-width: 576px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__title{
+
+        padding: 28px 28px 13px 28px;
+        margin-bottom: 60px;
+        background: #3076BD;
+        color: #fff;
+
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 32.5px; /* 116.071% */
+        text-align: center;
+
+        width: 95%;
+        margin: 0 auto;
+
+        @media(max-width: 768px) {
+            font-size: 24px;
+        }
+        @media(max-width: 576px) {
+            font-size: 20px;
+        }
+    }
+    &__title span{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+    }
+
+    &__list{
+        @media(max-width: 768px) {
+            padding: 0 15px;
+        }
+    }
+
+    &__list li{
+        list-style: none;
+        font-weight: 500;
+        margin-bottom: 18px;
+
+        display: flex;
+        align-items: center;
+        text-wrap: balance;
+        @media(max-width: 576px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &:before{
+            content: "";
+            background: url('/assets/svg/check.svg');
+            background-position: 50%;
+            min-width: 25px;
+            height: 25px;
+            display: block;
+            margin-bottom: auto;
+
+            margin-right: 10px;
+        }
+    }
+
+    &__royalty{
+        font-size: 24px;
+        padding: 16px 28px;
+        background: #3076BD;
+        color: #fff;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        width: 378px;
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    button{
+        border: 2px solid rgba(48, 118, 189, 1);
+        color: rgba(48, 118, 189, 1);
+        padding: 14px 16px;
+        font-size: 18px;
+        font-weight: 700;
+        width: 378px;
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
