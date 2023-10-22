@@ -1,465 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <img src="./assets/svg/logotype.svg" alt="">
-            </div>
-            <div class="header__ul">
-                <a href="#">
-                    <img src="./assets/svg/icon-message.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="./assets/svg/icon-phone.svg" alt="">
-                </a>
-            </div>
-        </header>
+   <div class="wrapper">
+      <main class="main">
+         <h1 class="main_title">
+            Программа <br> выступления 
+         </h1>
 
-        <main class="main row">
-            <div class="col-lg-5 col-12">
-                <h1 class="title">Франшиза <br> сети отелей «ОТО»</h1>
-                <p>Cтать отельером с доходом <br> от 350 000 рублей в месяц</p>
+         <h2 class="main_theme">
+            ОГРАБЛЕНИЕ ПЯТЁРОЧКИ
+         </h2>
 
-                <button>Узнать подробности</button>
-            </div>
-            <div class="col-lg-7 col-12">
-                <img src="./assets/s1.jpg" alt="">
-            </div>
-        </main>
+         <img src="5ka.png" alt="" class="main_img">
+      </main>
 
-        <section class="for-whom row row-cols-lg-2 row-cols-1">
-            <div class="col">
-                <div class="title">Для кого подойдет стать <br> нашим Партнером</div>
+      <header class="header">
+         <div class="header_it">IT</div>
+         <div class="header_text">
+            ФАКУЛЬТЕТ ИНФОРМАЦИОННЫХ <br> ТЕХНОЛОГИЙ
+         </div>
+      </header>
+      
+      <section class="section_white section" id="welcome">
+         <div>
+            <b>Здравствуйте, уважаемый зритель. Присаживайтесь поудобнее. Вас ждёт увлекательное путешествие</b>
+            <br><br>
+            Используйте эту программу для ознакомления с участниками выступления и планом.
+            <br><br>
+            <b>Приятного просмотра!</b>
+         </div>
+      </section>
 
-                <ul class="for-whom__ul">
-                    <li>Вы хотите реализовать свою мечту стать отельером, но у вас нет опыта</li>
-                    <li>Вы мечтаете выйти из найма и работать на себя</li>
-                    <li>Вы уже имеете отель, но хотите на нем больше зарабатывать</li>
-                    <li>Вы хотите надёжно инвестировать ваши деньги и получать пассивный доход</li>
-                </ul>
-            </div>
-            <div class="col">
-                <img class="for-whom__img" src="/assets/for-whom.png" alt="">
-            </div>
-        </section>
+      <section class="section section_green">
+         <div class="section__title-img">
+            <img src="crown.png" alt="">
+         </div>
+         <div class="section__title green">
+            Организаторы
+         </div>
 
-        <section class="oto-is">
-            <div class="title">Сеть отелей «ОТО» – это</div>
-
-            <div class="oto-is__body">
-                <img class="oto-is__img" src="/assets/oto-is.jpg" alt="">
-                <div class="oto-is__text">
-                    20 отелей 2 и 3 звезды в управлении с рейтингом выше 9,2
-                </div>
-                <div class="oto-is__plug"></div>
-            </div>
-        </section>
-
-
-        <section class="conditions">
-           <div class="title">Условия франшизы</div>
-           <div class="conditions__body">
-               <div class="conditions__title">
-                   Паушальный взнос <br> 50 000 ₽ <s>100 000</s> <br>  за 1 подключенный номер <br>
-                   <span>Минимальное количество номеров 20</span>
-               </div>
-
-               <ul class="conditions__list">
-                   <li>Подключение к единой сети</li>
-                   <li>Ребрендинг номерного фонда под ключ</li>
-                   <li>Франшизный пакет, который включает в себя все необходимые документы, регламенты, чек-листы по ведению бизнеса</li>
-                   <li>Подключение к системе бронирования, активация всех источников трафика</li>
-                   <li>Подключение к единому отделу бронирования</li>
-                   <li>Бесплатная PMS система и динамическое ценообразование на основе AI</li>
-                   <li>Обучение полному запуску и ведению бизнеса</li>
-                   <li>Обучение партнёра и персонала партнёра</li>
-                   <li>Единая система лояльности увеличивающая кол-во повторных бронирований внутри сети</li>
-                   <div class="conditions__royalty">
-                       Роялти 22% от выручки
-                   </div>
-                   <li>Персональный менеджер сопровождения</li>
-                   <li>Полный цикл бронирования (маркетинг, размещение отеля на всех источниках, система управления отелем под ключ)</li>
-                   <li>Работа с репутацией отеля</li>
-
-                   <button>Стать партнёром</button>
-               </ul>
-
-
-           </div>
-        </section>
-
-        <section class="do">
-            <div class="title">Что нужно будет делать партнеру</div>
-
-            <div class="swiper">
-               <div class="do-slider__arrows">
-                   <div class="do-slide__prev">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
-                       </svg>
-                   </div>
-                   <div class="do-slide__next">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
-                       </svg>
-                   </div>
-               </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="do-slider__title">
-                            <u>Запуск отеля с нуля</u>
-                        </div>
-                        <div class="do-slider__body">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="/assets/svg/edit.svg" alt="">
-                                    Подписать <br> договор с отелем
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/person.svg" alt="">
-                                    Нанять персонал <br> по предложенной схеме
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/rebranding.svg" alt="">
-                                    Провести полный запуск <br> и ребрендирование
-                                </div>
-                                <div class="col-6">
-                                    <img src="/assets/svg/rebranding.svg" alt="">
-                                    Провести полный запуск <br> и ребрендирование
-                                </div>
-                                <div class="col-6">
-                                    <img src="/assets/svg/rebranding.svg" alt="">
-                                    Провести полный запуск <br> и ребрендирование
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="do-slider__title">
-                            <u>Подключение действующего отеля в сеть</u>
-                        </div>
-                        <div class="do-slider__body">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="/assets/svg/chat.svg" alt="">
-                                    Оставить заявку
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/message.svg" alt="">
-                                    Согласовать условия <br> и подписать договор
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/rebranding.svg" alt="">
-                                    Сделать ренновацию <br> номеров по стандартам <br> OTO
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/book.svg" alt="">
-                                    Пройти обучение
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/gift.svg" alt="">
-                                    Обеспечить лучший сервис <br> гостям и безупречную <br> репутацию сети
-                                </div>
-                                <div class="col-4">
-                                    <img src="/assets/svg/stat.svg" alt="">
-                                    Увеличивать свой доход <br> и чистую прибыль
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="do-slider__title">
-                            <u>Инвестируйте денежные средства в отель</u>
-                        </div>
-
-                        <div class="d-flex">
-                            <div class="do-slider__form">
-                                <p>Оставить заявку для подробной информации</p>
-
-                                <input type="text" placeholder="Ваше имя">
-                                <input type="tel" inputmode="tel" placeholder="Телефон">
-                                <input type="email" inputmode="email" placeholder="Email">
-                                <button>Оставить заявку</button>
-                                <label>
-                                    <input type="checkbox" checked>
-                                    <div>
-                                        Я даю согласие на <a>обработку персональных данных</a> и соглашаюсь с <a>политикой конфеденциальности</a>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="do-slider__img">
-                                <img src="/assets/form.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="do__other">Остальное мы берем на себя!</div>
-        </section>
-
-        <section class="calculate">
-            <div class="title">Переходим к цифрам</div>
-
-            <div class="calculate__body">
-                <input type="number" inputmode="numeric"/>
-                <input type="number" inputmode="numeric"/>
-                <input type="number" inputmode="numeric"/>
-            </div>
-        </section>
-
-        <section class="table">
-            <div class="title">
-                Ваш отель «ОТО»  <br>  «под ключ» через 16 недель
-            </div>
-            <table>
-                    <tr>
-                        <td>1 месяц</td>
-                        <td>2 месяц</td>
-                        <td>3 месяц</td>
-                        <td>4 месяц</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <b>1 этап</b> <br> Регистрационные <br> процедуры
-                                </div>
-
-                                <span class="line"
-                                      style="width: 13.768%; background: #00327F; margin-right: 30px"
-                                ></span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <b>2 этап</b> <br> Стартовое обучение <br> Франчайзи
-                                </div>
-
-                                <span class="line"
-                                      style="width: 23.913%; background: #0045AF;"
-                                ></span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>3 этап</b> <br> Подбор отеля
-                        </td>
-                        <td>
-                          <span class="line"
-                                style="width: 57.536%; background: #0259DF; transform: translateX(-15.579%)"
-                          ></span>
-                        </td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>4 этап</b> <br> Подготовка <br> и подписание <br> документов
-                        </td>
-                        <td>
-                          <span class="line"
-                                style="width: 62.173%; background: #5699FF; margin-left: 37.847%;"
-                          ></span>
-                        </td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>5 этап</b> <br> Ребрендинг <br> номерного фонда
-                        </td>
-                        <td></td>
-                        <td>
-                              <span class="line"
-                                    style="width: 66.826%; background: #B8D4FF;"
-                              ></span>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>6 этап</b> <br> Проведение <br> рекламной кампании
-                        </td>
-                        <td></td>
-                        <td>
-                            <span class="line"
-                                  style="width: 144.869%; background: #87B6FF; margin-left: 55.847%"
-                            ></span>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>7 этап</b> <br> Подбор и стартовое <br> обучение персонала
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                           <span class="line"
-                                 style="width: 48.869%; background: #0259DF; margin-left: -11.847%"
-                           ></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>8 этап</b> <br> Установка отеля <br> к IT-платформе ОТО
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                           <span class="line"
-                                 style="width: 48.869%; background: #0045AF;"
-                           ></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>9 этап</b> <br>Техническое и <br> торжественное <br> открытие
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                               <span class="line"
-                                     style="width: 50%; background: #00327F; margin-left: 50%"
-                               ></span>
-                        </td>
-                    </tr>
-            </table>
-            <div class="mobile">
-                <p>
-                    <b>1 этап</b>
-                    Регистрационные процедуры
-                </p>
-                <p>
-                    <b>2 этап</b>
-                    Стартовое обучение Франчайзи
-                </p>
-                <p>
-                    <b>3 этап</b>
-                    Подбор отеля
-                </p>
-                <p>
-                    <b>4 этап</b>
-                    Подготовка и подписание документов
-                </p>
-                <p>
-                    <b>5 этап</b>
-                    Ребрендинг номерного фонда
-                </p>
-                <p>
-                    <b>6 этап</b>
-                    Проведение рекламной кампании
-                </p>
-                <p>
-                    <b>7 этап</b>
-                    Подбор и стартовое обучение персонала
-                </p>
-                <p>
-                    <b>8 этап</b>
-                    Установка отеля к IT-платформе ОТО
-                </p>
-                <p>
-                    <b>9 этап</b>
-                    Техническое и торжественное открытие
-                </p>
-
-            </div>
-        </section>
-
-        <section class="gallery">
-            <div class="title">Отели сети</div>
-            <div class="row row-cols-sm-2 row-cols-1" style="margin-bottom: -52px;">
-                <div class="col kostil">
-                    <div class="gallery__body">
-                        <img src="/assets/gall-1.jpg" alt="">
-                        <div class="gallery__address">Лобня, Железнодорожная ул., 14А</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="gallery__body">
-                        <img src="/assets/gall-2.jpg" alt="">
-                        <div class="gallery__address">Сочи, Курортный пр-т., 111/5к10</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-md-3 row-cols-1">
-                <div class="col">
-                    <div class="gallery__body">
-                        <img src="/assets/gall-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="gallery__body">
-                        <img src="/assets/gall-4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="gallery__body">
-                        <img src="/assets/gall-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps&zoom=10" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/house/peterburgskaya_ulitsa_52/YEAYdwRjTUEDQFtvfXt5cX5iZw==/?ll=49.135826%2C55.779548&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.135826%2C55.779548&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjI5NzY4MxJu0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0sINCa0LDQt9Cw0L3RjCwg0J_QtdGC0LXRgNCx0YPRgNCz0YHQutCw0Y8g0YPQu9C40YbQsCwgNTIiCg2niERCFfEeX0I%2C&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-            <div class="footer__body">
-                <div class="footer__title">Узнать больше и стать партнёром</div>
-
-                <div class="footer__info">
-                    <p>г . Казань, ул . Петербургская, 52</p>
-                    <p><a href="mailto:info@oto-hotels.com">info@oto-hotels.com</a></p>
-                    <p><a href="tel:+79274372222">+7 927 437 22 22</a></p>
-                </div>
-
-                <div class="footer__links">
-                    <a href="#">
-                        <img src="/assets/svg/telegram.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="/assets/svg/vk.svg" alt="">
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
-
-        document.addEventListener('DOMContentLoaded', ()=>{
-            const swiper = new Swiper('.swiper', {
-                navigation: {
-                    enabled: true,
-                    nextEl: '.do-slide__next',
-                    prevEl: '.do-slide__prev'
-                },
-            })
-        })
-    </script>
+         <ul style="font-size: 19px;">
+            <li>Шамазов Ильнур  <span>П-211</span></li>
+            <li>Бикмуллина Аделя <span>П-211</span></li>
+            <li>Курмакаев Ринат <span>П-211</span></li>
+            <li>Гимадиев Артур <span>П-211</span></li>
+            <li>Гареева Азалия <span>ПИ-212</span></li>
+            <li>Аношкина Екатерина <span>ПИ-212</span></li>
+            <li>Гильманова Алсу <span>ПИ-112</span></li>
+            <li>Валиева Зайнаб <span>П-211</span></li>
+            <li>Ипатов Данил <span>ПИ-122</span></li>
+         </ul>
+      </section>
+   </div>
 </body>
 </html>
