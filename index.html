@@ -10,6 +10,12 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+   <script>
+      var url_string = window.location;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("q");
+      alert(c);
+   </script>
    <div class="wrapper">
       <main class="main">
          <h1 class="main_title">
@@ -44,7 +50,7 @@
          <div class="section__title-img">
             <img src="crown.png" alt="">
          </div>
-         <div class="section__title green">
+         <div class="section__title">
             Организаторы
          </div>
 
@@ -58,6 +64,27 @@
             <li>Гильманова Алсу <span>ПИ-112</span></li>
             <li>Валиева Зайнаб <span>П-211</span></li>
             <li>Ипатов Данил <span>ПИ-122</span></li>
+         </ul>
+      </section>
+
+      <section class="section section_white">
+         <div class="section__title-img">
+            <img src="robber.png" alt="" width="100px">
+         </div>
+         <div class="section__title">
+            Герои
+         </div>
+
+         <ul style="font-size: 19px;">
+            <li>
+               Лидер <br> Хохорин Даниил <span>ПИ-312</span>
+            </li>
+
+            <li>Трус <br> Гурьев Артём <span>ПИ-312</span></li>
+            <li>Дурачок <br> Борисов Богдан <span>ПИ-312</span></li>
+            КассиршаМитрофанова Дарья ПИ-312
+            ПолицейскийХусаинов Адель П-321
+            Колдунья Родионова Ева П-311
          </ul>
       </section>
    </div>
