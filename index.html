@@ -10,17 +10,6 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <script>
-      // var url_string = window.location;
-      // var url = new URL(url_string);
-      // var c = url.searchParams.get("q");
-
-      // const data = {
-      //    "urda": 'Урда',
-      //    "urda2df": 'Урдdа',
-      // }
-      // alert(data.urda2df)
-   </script>
    <div class="wrapper">
       <main class="main">
          <h1 class="main_title">
@@ -43,13 +32,53 @@
       
       <section class="section_white section" id="welcome">
          <div>
-            <b>Здравствуйте, уважаемый зритель. Присаживайтесь поудобнее. Вас ждёт увлекательное путешествие</b>
+            <b>Здравствуйте, <span id="jj54"></span> Приглашаем Вас на Ежегодний внутри вузовский фестиваль «День первокурсника 2023».</b>
             <br><br>
             Используйте эту программу для ознакомления с участниками выступления и планом.
             <br><br>
             <b>Приятного просмотра!</b>
          </div>
       </section>
+      <script>
+         var url_string = window.location;
+         var url = new URL(url_string);
+         var q = url.searchParams.get("q");
+   
+         const data = {
+            "uvazhaemaya-nella-matveevna": 'уважаемая Нэлла Матвеевна',
+            "uvazhaemaya-evgeniya-aleksandrovna": 'уважаемая Евгения Александровна',
+            "uvazhaemyj-dmitrij-vladimirovich": 'уважаемый Дмитрий Владимирович',
+            "uvazhaemaya-olesya-mihajlovna": 'уважаемая Олеся Михайловна',
+            "uvazhaemyj-maksim-anatolevich": 'уважаемый Максим Анатольевич',
+            "uvazhaemaya-farida-hakimovna": 'уважаемая Фарида Хакимовна',
+            "uvazhaemaya-elvira-ravilevna": 'уважаемая Эльвира Равилевна',
+            "uvazhaemaya-olga-viktorovna": 'уважаемая Ольга Викторовна',
+            "uvazhaemaya-kafiya-israfilovna": 'уважаемая Кафия Исрафиловна',
+            "uvazhaemaya-lyudmila-borisovna": 'уважаемая Людмила Борисовна',
+            "uvazhaemaya-lejsan-rinatovna": 'уважаемая Лейсан Ринатовна',
+            "uvazhaemaya-elena-aleksandrovna": 'уважаемая Елена Александровна',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+            "2": '1',
+         }
+         res = '';
+         if(q){
+            res = data[q]
+         }else{
+            res = 'уважаемый зритель'
+         }
+         document.getElementById('jj54').innerHTML = res
+      </script>
 
       <section class="section section_green">
          <div class="section__title-img">
