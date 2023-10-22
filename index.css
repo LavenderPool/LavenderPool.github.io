@@ -12,6 +12,7 @@ body{
    margin: 0 auto;
 
    background-image: url('/Rectangle.png');
+   background-size: 105%;
 }
 
 .main{
@@ -62,10 +63,10 @@ body{
    background: rgba(255, 255, 255, 0.92);
 }
 .section_green{
-   background: rgba(67, 160, 87, 0.82);
+   background: rgba(64, 153, 83, 0.82);
 }
 .section{
-   padding: 70px 5px;
+   padding: 50px 5px;
    font-size: 20px;
    font-weight: 700;
 }
@@ -89,6 +90,10 @@ body{
 .section_green .section__title{
    background: #FFF;
 }
+.section_white .section__title{
+   background: #1E1E1E;
+   color: #fff;
+}
 .section_green ul{
    color: #FFF;
 }
@@ -97,9 +102,13 @@ ul{
    list-style: inside;
    padding: 0 5px;
    display: flex;
-   justify-content: center;
+   margin: 0 auto;
    flex-direction: column;
-   margin-top: 20px;
+   margin-top: 22px;
+   width: fit-content;
+}
+ul li{
+   margin: 8px 0;
 }
 ul span{
    font-size: 12px;
