@@ -32,7 +32,7 @@
       
       <section class="section_white section" id="welcome">
          <div>
-            <b>Здравствуйте, <span id="jj54"></span>!Приглашаем Вас на Ежегодный внутри вузовский фестиваль «День первокурсника 2023».</b>
+            <b>Здравствуйте<span id="buba">,</span> <span id="jj54"></span>!Приглашаем Вас на Ежегодный внутри вузовский фестиваль «День первокурсника 2023».</b>
             <br><br>
             Используйте эту программу для ознакомления с участниками выступления и планом.
             <br><br>
@@ -79,6 +79,7 @@
             res = data[q]
          }else{
             res = ''
+            document.getElementById('buba').innerHTML = res
          }
          document.getElementById('jj54').innerHTML = res
       </script>
