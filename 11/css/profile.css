@@ -1,3 +1,17 @@
+.profile__close{
+   border: 2px solid rgba(28, 28, 28, 0.00);
+   background: linear-gradient(88deg, #FECE03 -7.64%, #EBBF02 145.94%);
+   box-shadow: 5.286px 7.929px 35.238px 0px rgba(137, 117, 27, 0.20);
+   margin-left: auto;
+   width: 24px;
+   height: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   margin-bottom: 5px;
+   padding-left: 1px;
+}
 .profile__avatar{
    border-radius: 50%;
    display: block;
