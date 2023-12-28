@@ -222,12 +222,12 @@
 }
 .profile__seek{
    background: #1C1C1C;
-   padding: 16px;
    border-radius: 20px;
 }
 .profile__seek p{
    margin-bottom: 20px;
    font-size: 13px;
+   padding: 16px 16px 0 16px;
 }
 
 .profile__seek-item{
@@ -235,7 +235,7 @@
    flex-direction: column;
    width: 80px;
    justify-content: center;
-   margin-right: 10px;
+   margin: 5px;
 }
 
 .profile__seek-item>img{
