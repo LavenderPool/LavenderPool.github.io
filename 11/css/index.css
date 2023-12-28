@@ -23,7 +23,7 @@ main{
    padding: 40px 20px;
    margin-bottom: 40px;
 
-   background-image: url('./img/profile-bg.png');
+   background-image: url('img/profile-bg.png');
    background-size: 70%;
    background-repeat: no-repeat;
    background-position: 50% 0%;
