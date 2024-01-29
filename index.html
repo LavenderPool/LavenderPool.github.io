@@ -3,265 +3,138 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>IT ФАКУЛЬТЕТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ</title>
-   <link rel="stylesheet" href="index.css">
+   <title>Document</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+      *{
+         font-family: 'Inter', sans-serif;
+         transition-duration: 0.2s;
+
+         /* Обнуление */
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+   </style>
 </head>
 <body>
    <div class="wrapper">
-      <main class="main">
-         <h1 class="main_title" style='font-size:30px'>
-            Пригласительное
-         </h1>
-
-         <h2 class="main_theme">
-            ОГРАБЛЕНИЕ ПЯТЁРОЧКИ
-         </h2>
-
-         <img src="5ka.png" alt="" class="main_img">
-      </main>
-
       <header class="header">
-         <div class="header_it">IT</div>
-         <div class="header_text">
-            ФАКУЛЬТЕТ ИНФОРМАЦИОННЫХ <br> ТЕХНОЛОГИЙ
+         <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+         </div>
+         <div class="header__button">
+            <a href="#" class="">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+               </svg>
+               Войти
+            </a>
          </div>
       </header>
-      
-      <section class="section_white section" id="welcome">
-         <div>
-            <b>Здравствуйте<span id="buba">,</span> <span id="jj54"></span>! Приглашаем Вас на Ежегодный внутри вузовский фестиваль «День первокурсника 2023».</b>
-            <br><br>
-            Используйте эту программу для ознакомления с участниками выступления и планом.
-            <br><br>
-            <b>Приятного просмотра!</b>
-         </div>
-      </section>
-      <script>
-         var url_string = window.location;
-         var url = new URL(url_string);
-         var q = url.searchParams.get("q");
-   
-         const data = {
-            "uvazhaemaya-nella-matveevna": 'уважаемая Нэлла Матвеевна',
-            "uvazhaemaya-evgeniya-aleksandrovna": 'уважаемая Евгения Александровна',
-            "uvazhaemyj-dmitrij-vladimirovich": 'уважаемый Дмитрий Владимирович',
-            "uvazhaemaya-olesya-mihajlovna": 'уважаемая Олеся Михайловна',
-            "uvazhaemyj-maksim-anatolevich": 'уважаемый Максим Анатольевич',
-            "uvazhaemaya-farida-hakimovna": 'уважаемая Фарида Хакимовна',
-            "uvazhaemaya-elvira-ravilevna": 'уважаемая Эльвира Равилевна',
-            "uvazhaemaya-olga-viktorovna": 'уважаемая Ольга Викторовна',
-            "uvazhaemaya-kafiya-israfilovna": 'уважаемая Кафия Исрафиловна',
-            "uvazhaemaya-lyudmila-borisovna": 'уважаемая Людмила Борисовна',
-            "uvazhaemaya-lejsan-rinatovna": 'уважаемая Лейсан Ринатовна',
-            "uvazhaemaya-elena-aleksandrovna": 'уважаемая Елена Александровна',
-            "uvazhaemaya-anna-mihajlovna": 'уважаемая Анна Михайловна',
-            "uvazhaemaya-elvira-arslanovna": 'уважаемая Эльвира Арслановна',
-            "uvazhaemaya-evgeniya-igorevna": 'уважаемая Евгения Игоревна',
-            "uvazhaemaya-sofiya-mirgalimovna": 'уважаемая София Миргалимовна',
-            "uvazhaemaya-svetlana-muhametovna": 'уважаемая Светлана Мухаметовна',
-            "uvazhaemaya-natalya-vladimirovna": 'уважаемая Наталья Владимировна',
-            "uvazhaemyj-dmitrij-valerevich": 'уважаемый Дмитрий Валерьевич',
-            "uvazhaemaya-olga-petrovna": 'уважаемая Ольга Петровна',
-            "uvazhaemyj-ildar-fenisovich": 'уважаемый Ильдар Фенисович',
-            "uvazhaemyj-genadij-georgievich": 'уважаемый Геннадий Георгиевич',
-            "uvazhaemyj-evgenij-aleksandrovich": 'уважаемый Евгений Александрович',
-            "uvazhaemyj-yusuf-hamid-ugli": 'уважаемый Юсуф Хамид Угли',
-            "uvazhaemaya-ajgul-ruslanovna": 'уважаемая Айгуль Руслановна',
-            "uvazhaemyj-azat-azatovich": 'уважаемый Азат Азатович',
-            "uvazhaemyj-denis-anatolevich": 'уважаемый Денис Анатольевич',
-            "uvazhaemyj-danil-shamilevich": 'уважаемый Даниль Шамилевич',
-         }
-         res = '';
-         if(q){
-            res = data[q]
-         }else{
-            res = ''
-            document.getElementById('buba').innerHTML = res
-         }
-         document.getElementById('jj54').innerHTML = res
-      </script>
 
-      <section class="section section_green">
-         <div class="section__title-img">
-            <img src="crown.png" alt="">
-         </div>
-         <div class="section__title">
-            Организаторы
+
+      <main class="main">
+         <div class="main__up">
+            <span>Продлевай срок</span>
+            <span class="line"></span>
+            <span>Оплачивай досрочно</span>
          </div>
 
-         <ul style="font-size: 19px;">
-            <li>Шамазов Ильнур  <span>П-211</span></li>
-            <li>Бикмуллина Аделя <span>П-211</span></li>
-            <li>Курмакаев Ринат <span>П-211</span></li>
-            <li>Гимадиев Артур <span>П-211</span></li>
-            <li>Гареева Азалия <span>ПИ-212</span></li>
-            <li>Аношкина Екатерина <span>ПИ-212</span></li>
-            <li>Гильманова Алсу <span>ПИ-112</span></li>
-            <li>Валиева Зайнаб <span>П-211</span></li>
-            <li>Ипатов Данил <span>ПИ-122</span></li>
-         </ul>
-      </section>
-
-      <section class="section section_white">
-         <div class="section__title-img">
-            <img src="robber.png" alt="" width="100px">
-         </div>
-         <div class="section__title">
-            Герои
-         </div>
-
-         <ul style="font-size: 19px;">
-            <li>
-               Лидер <br> Хохорин Даниил <span>ПИ-312</span>
-            </li>
-
-            <li>Трус <br> Гурьев Артём <span>ПИ-312</span></li>
-            <li>Дурачок <br> Борисов Богдан <span>ПИ-312</span></li>
-            <li>Кассирша <br> Митрофанова Дарья <span> ПИ-312</span></li>
-            <li>Полицейский <br> Хусаинов Адель <span>П-321</span></li>
-            <li>Колдунья <br> Родионова Ева <span>П-311</span></li>
-         </ul>
-      </section>
-
-      <section class="section section_green">
-         <div class="section__title-img">
-            <img src="dance.png" alt="" width="100px">
-         </div>
-         <div class="section__title">
-            Танец
-         </div>
-
-         <ul style="font-size: 17px;">
-            <li>Исмагилов Ильнар <span>ПИ-312</span></li>
-            <li>Лобанова Дана <span>ПИ-312</span></li>
-            <li>Мумиджонов Бобурбек <span>ПИ-312</span></li>
-            <li>Бикмухаметова Алина <span>ПИ-312</span></li>
-            <li>Бийболатова Ильвина <span> П-311</span></li>
-            <li>Давыдова Софья <span>П-311</span></li>
-            <li>Климанов Данил <span>П-311</span></li>
-            <li>Аношкина Екатерина <span>ПИ-212</span></li>
-         </ul>
-      </section>
-      <section class="section section_white">
-         <div class="section__title-img">
-            <img src="mic.png" alt="" width="70px">
-         </div>
-         <div class="section__title">
-            Вокально инструментальный номер 
-         </div>
-
-         <ul style="font-size: 19px;">
-            <li>Черненко Максим <span>ПИ-312</span><br> Гитара</li>
-            <li>Гимадиев Артур <span>П-211</span> <br> Бас-гитара</li>
-            
-            <li>Данилов Аркадий <span>П-311</span><br> Барабаны</li>
-            
-            <li>Родионова Ева <span> П-311</span> <br> Вокал, Клавишные</li>
-            <li>Ходжиев Муйин <span>ПИ-312</span> <br> Вокал</li>
-         </ul>
-      </section>
-
-      <section class="section section_green">
-         <div class="section__title-img">
-            <img src="wow.png" alt="" width="150px">
-         </div>
-         <div class="section__title">
-            Оригинальный жанр 
-         </div>
-
-         <ul style="font-size: 19px;">
-            <li>Зарипов Вильдан <span> п-321</span></li>
-            <li>Салахов Карим <span>П-311</span></li>
-            <li>Маликов Наиль <span>П-311</span></li>
-            <li>Иевлев Владимир <span>ПИ-312</span></li>
-            <li>Акшенцев Дмитрий <span>ПИ-312</span></li>
-         </ul>
-      </section>
-
-      <section class="section section_white">
-         <div class="section__title-img">
-            <img src="crown.png">
-         </div>
-         <div class="section__title">
-            мода
-         </div>
-
-         <ul style="font-size: 19px;">
-            <li>Привалова Галина <span>П-321</span></li>
-            <li>Моисеев Роман <span>П-311</span></li>
-            <li>Хузина Диляра <span>П-321</span></li>
-            <li>Тарасова Елизавета <span>П-321</span></li>
-            <li>Салахов Давид <span>ПИ-312</span></li>
-            <li>Мифтяев Аскар <span>ПИ-312</span></li>
-         </ul>
-      </section>
-      <section class="section section_green">
-         <div class="section__title-img">
-            <img src="box.png" width="100px">
-         </div>
-         <div class="section__title">
-            Декорации
-         </div>
-
-         <ul style="font-size: 19px;">
-            <li>
-               Гарипова Сабина <span>П-321</span>
-            </li>
-            <li>Зарипов Вильдан <span>П-321</span></li>
-
-            <li>Мухаметзянов Аяз <span>ПИ-312</span></li>
-            <li>Привалова Галина <span>П-321</span></li>
-            <li>Моисеев Роман <span>П-311</span></li>
-            <li>Хузина Диляра <span>П-321</span></li>
-            <li>Тарасова Елизавета <span>П-321</span></li>
-            <li>Салахов Давид <span>ПИ-312</span></li>
-            <li>Мифтяев Аскар <span>ПИ-312</span></li>
-            <li>Гибадуллин Эмиль <span>П-311</span></li>
-         </ul>
-      </section>
-      <section class="section section_white">
-         <div class="section__title">
-            Финалка
-         </div>
-         <div style="font-size: 16px; font-weight: 500; padding: 0 5px; margin-top: 40px;">
-            <p>Принимали все данные, как есть (ооо) </p>
-            <p>И коды писали всю ночь (ее е) </p>
-            <p>Баги и ошибки в огонь (ооо) </p>
-            <p>Вируcы гнали прочь (Е) </p>
-            <p>От пары до пары, от идеи до кода -</p>
-            <p>И кто вместе с нами, просто дай пять</p>
-            <br><br>
-            
-            <p>Дай пять, если ты все еще ищешь свою дорогу</p>
-            <p>В IT, если ты прогу изучишь, и знаешь даже плюсы. </p>
-            <p>IT умеют всё сразу, и не разлучимы они</p>
-            <p>И будьте круты вместе с нами, ведь вся сила за нами. </p>
-            <p>Айти, ооооо</p>
-            <p>айти, ооооо</p>
-            <p>айти, ооооо</p>
-            <p>айти, айти, айти, айти, айти</p>
-            <br><br>
-
-            <p>Скажем не время спать, (ооо) </p>
-            <p>Усердно кодить, решать! (ее е) </p>
-            <p>Айти – вам не просто семья, (ооо) </p>
-            <p>Мы вместе творим чудеса. (Е) </p>
-            <p>От пары до пары, от идеи до кода -</p>
-            <p>И кто вместе с нами, просто дай пять</p>
-
-            <p>Дай пять, если ты все еще ищешь свою дорогу</p>
-            <p>В IT, если ты прогу изучишь, и знаешь даже плюсы.</p>
-            <p>IT умеют всё сразу, и не разлучимы они</p>
-            <p>И будьте круты вместе с нами, ведь вся сила за нами. </p>
-            <p>Айти, ооооо</p>
-            <p>айти, ооооо</p>
-            <p>айти, ооооо</p>
-            <p>айти, айти, айти, айти, айти</p>
+         <div class="main__body">
+            <div class="main__range">
+               <label for="Range3" class="main__range-label">
+                  Сумма займа
+                  <div id="ssum">3000 ₽</div>
+               </label>
+               <input type="range" class="range" min="1000" max="30000" step="1000" id="Range3" value="3000">
             </div>
-      </section>
+            <div class="main__range">
+               <label for="Range2" class="main__range-label">
+                  Срок займа
+                  <div id="sday">15 <span>Дней</span></div>
+               </label>
+               <input type="range" class="range" min="7" max="40" step="1" id="Range2" value="15">
+            </div>
+            <div class="main__label">
+               <div>
+                  <div class="main__label-title">Проценты</div>
+                  <span id="precentes">0</span>
+               </div>
+               <div>
+                  <div class="main__label-title">Срок</div>
+                  <span id="futureDate">27.08.2023</span>
+               </div>
+            </div>
+            <button class="main_get">
+               Получить 4 000 ₽
+            </button>
+            <button class="main__gos">
+               <img src="/img/gos.svg" alt="">
+               Получить через Госуслуги
+            </button>
+            <div class="main__note">Одобряем до 98% заявок через Госуслуги</div>
+         </div>
+      </main>
    </div>
+
+   <script>
+      const rangePrice = document.getElementById('Range3')
+      const rangeDays = document.getElementById('Range2')
+
+      // эвент на прайс
+      rangePrice.addEventListener("input", () => {
+
+         const min = rangePrice.min
+         const max = rangePrice.max
+         const currentVal = rangePrice.value
+         document.getElementById('ssum').innerText = `${rangePrice.value} ₽`;
+
+         rangePrice.style.backgroundSize = ((currentVal - min) / (max - min)) * 100 + "% 100%"
+
+         updateLabel()
+      } );
+
+      // эвент на дни
+      rangeDays.addEventListener("input", () => {
+         const min = rangeDays.min
+         const max = rangeDays.max
+         const currentVal = rangeDays.value
+         let stringDay = 'Дней';
+         if(rangeDays.value > 20 && rangeDays.value < 40 && rangeDays.value % 10 == 1){
+            stringDay = 'День'
+         }else if(rangeDays.value > 20 && rangeDays.value < 40 && 5 > rangeDays.value % 10 )
+         {
+            stringDay = 'Дня';
+         }
+         document.getElementById('sday').innerHTML = `${rangeDays.value} <span>${stringDay}</span>`;
+
+         rangeDays.style.backgroundSize = ((currentVal - min) / (max - min)) * 100 + "% 100%"
+
+         updateLabel()
+      })
+
+      function updateLabel(){
+         let precentes = rangePrice.value * 0.005 * rangeDays.value;
+         document.getElementById('precentes').innerText = precentes;
+
+         // Высчитывание даты
+         var currentDate = new Date();
+         currentDate.setTime(currentDate.getTime() +  rangeDays.value * 24 * 60 * 60 * 1000);
+         
+         let day = currentDate.getDate();
+         let month = currentDate.getMonth() + 1; // Месяцы в JavaScript начинаются с 0
+         let year = currentDate.getFullYear();
+         day = day < 10 ? '0' + day : day;
+         month = month < 10 ? '0' + month : month;
+
+         document.getElementById('futureDate').innerText = `${day}.${month}.${year}`;
+      }
+
+      updateLabel()
+   </script>
 </body>
 </html>
