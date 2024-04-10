@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   <div class="wrapper">
+      <main>
+         <div class="profile">
+
+            <div class="profile__close">
+               <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+                  <path d="M6.22222 0.777793L0.777793 6.22222M0.777771 0.777771L6.22222 6.22222" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+               </svg>
+            </div>
+
+            <img src="img/avatar.jpg" alt="" class="profile__avatar">
+            <p class="profile__title">Melissa peters</p>
+            <div class="profile__stats">
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">сообщений</p>
+                     <p class="stat__count">122</p>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">упоминаний</p>
+                     <p class="stat__count">67</p>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">сообществ</p>
+                     <p class="stat__count">12</p>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">рейтинг</p>
+                     <p class="stat__count">26,1</p>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">репостов</p>
+                     <p class="stat__count">11</p>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="stat">
+                     <p class="stat__title">отзывов</p>
+                     <p class="stat__count">0</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="profile-stars">
+               <img src="img/star.svg" alt="">
+               291 из 1203919
+            </div>
+
+            <div class="profile-status">
+               <div id="status" contenteditable="false">
+                  Если не ответила, напишите повторно ! 😎 Чат с моими услугами по привлечению трафика для бизнеса @TGficTop, Бот @mamabot
+               </div>
+               <span onclick="changeStatus()" id="status-button">
+                  <img src="img/pen.svg" alt="">
+               </span>
+            </div>
+
+            <div class="profile-buttons">
+
+               <div class="profile-button">
+                  <button>
+                     <img src="img/like.svg" alt="">
+                  </button>
+                  <span class="success">22</span>
+               </div>
+
+               <div class="profile-button">
+                  <button>
+                     <img src="img/dislike.svg" alt="">
+                  </button>
+                  <span class="error">7</span>
+               </div>
+
+               <div class="profile-button">
+                  <button>
+                     <img src="img/repost.svg" alt="">
+                  </button>
+                  <span class="error">7</span>
+               </div>
+               
+               <div class="profile-button">
+                  <button class="full">
+                     Написать
+                  </button>
+               </div>
+               
+            </div>
+
+
+            <div class="profile__chats">
+               <div class="profile__links">
+                  <div data-link="1" class="active">
+                     Сообщения
+                  </div>
+                  <div data-link="2">
+                     Упоминания
+                  </div>
+                  <div data-link="3">
+                     Репосты
+                  </div>
+               </div>
+               <div class="profile__block">
+                  <div data-chat="1" style="display: block;">
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              What is the most popular meal in Japan?
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde laborum veniam suscipit, nihil molestiae eligendi, non est minima perspiciatis nemo distinctio maxime dolores nesciunt aliquam accusamus at hic obcaecati numquam magnam consequuntur fugiat dicta ratione! Saepe est accusamus modi id in aliquam, ea minus consequatur itaque expedita perspiciatis fugit.
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde laborum veniam suscipit, nihil molestiae eligendi, non est minima perspiciatis nemo distinctio maxime dolores nesciunt aliquam accusamus at hic obcaecati numquam magnam consequuntur fugiat dicta ratione! Saepe est accusamus modi id in aliquam, ea minus consequatur itaque expedita perspiciatis fugit.
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde laborum veniam suscipit, nihil molestiae eligendi, non est minima perspiciatis nemo distinctio maxime dolores nesciunt aliquam accusamus at hic obcaecati numquam magnam consequuntur fugiat dicta ratione! Saepe est accusamus modi id in aliquam, ea minus consequatur itaque expedita perspiciatis fugit.
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-chat="2">
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin2</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              What is the most popular meal in Japan?
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin2</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde laborum veniam suscipit, nihil molestiae eligendi, non est minima perspiciatis nemo distinctio maxime dolores nesciunt aliquam accusamus at hic obcaecati numquam magnam consequuntur fugiat dicta ratione! Saepe est accusamus modi id in aliquam, ea minus consequatur itaque expedita perspiciatis fugit.
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-chat="3">
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin3</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              What is the most popular meal in Japan?
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+
+                     <div class="chat__item">
+                        <div class="chat__item-header">
+                           <img src="img/block.jpg" alt="">
+                           <span>Bitcoin3</span>
+                        </div>
+                        <div class="chat__item-body">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde laborum veniam suscipit, nihil molestiae eligendi, non est minima perspiciatis nemo distinctio maxime dolores nesciunt aliquam accusamus at hic obcaecati numquam magnam consequuntur fugiat dicta ratione! Saepe est accusamus modi id in aliquam, ea minus consequatur itaque expedita perspiciatis fugit.
+                           </p>
+                           <span>11:45</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="profile__seek-arrow"></div>
+            <div class="profile__seek">
+               <p>Замечен в 12 каналах и чатах</p>
+               <div class="profile__seek-items">
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+
+                  <div class="profile__seek-item">
+                     <img src="img/block.jpg" alt="">
+                     <div class="profile__seek-item-users">
+                        <img src="img/person.svg" alt="" width="10px">
+                        1.2k
+                     </div>
+                     <div class="profile__seek-item-name">Crypto Expert 2024</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

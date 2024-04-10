@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <main>
+         <img src="img/cat.png" alt="" class="cat">
+         <div class="result">
+            <div class="result__title">Results</div>
+            <div class="result__subtitle">Пользователей: 1928</div>
+            <div class="result__subtitle">Сообщений: 7039</div>
+            <div class="result__subtitle">Каналов: 182</div>
+            <div class="result__subtitle">Чатов: 9</div>
+
+            <div class="profile__chats">
+               <div class="profile__links">
+                  <div data-link="1" class="active">
+                     Юзеры
+                  </div>
+                  <div data-link="2">
+                     Сообщения
+                  </div>
+                  <div data-link="3">
+                     Каналы
+                  </div>
+                  <div data-link="4">
+                     Чаты
+                  </div>
+               </div>
+               <div class="profile__block">
+                  <div data-chat="1" style="display: block;">
+                     <div class="result-item-user">
+                        <img src="img/Oval.png" alt="">
+                        <div>
+                           <p class="result-item-user-name">Joshua Lawrence</p>
+                           <span class="result-item-user-counter">67,15</span>
+                        </div>
+                     </div>
+                     <div class="result-item-user">
+                        <img src="img/Oval.png" alt="">
+                        <div>
+                           <p class="result-item-user-name">Joshua Lawrence</p>
+                           <span class="result-item-user-counter">67,15</span>
+                        </div>
+                     </div>
+                     <div class="result-item-user">
+                        <img src="img/Oval.png" alt="">
+                        <div>
+                           <p class="result-item-user-name">Joshua Lawrence</p>
+                           <span class="result-item-user-counter">67,15</span>
+                        </div>
+                     </div>
+                     <div class="result-item-user">
+                        <img src="img/Oval.png" alt="">
+                        <div>
+                           <p class="result-item-user-name">Joshua Lawrence</p>
+                           <span class="result-item-user-counter">67,15</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-chat="2"></div>
+                  <div data-chat="3"></div>
+                  <div data-chat="4"></div>
+               </div>
+            </div>
+         </div>
+         <div class="result__footer">
+            <button
+            onclick="window.scrollBy(0, 50)"
+            class="result__footer-see" style="display: block;">Смотреть</button>
+            <button class="result__footer-buy" style="display: none;">Купить</button>
+            <button class="result__footer-new">
+               Новый поиск
+            </button>
+         </div>
+      </main>
+   </div>
+
+   <script src="script.js"></script>
+   <script>
+      const resultFooter = document.querySelector('.result__footer');
+
+      window.addEventListener('scroll', () => {
+         const scrollPosition = window.scrollY;
+
+         if (scrollPosition >= 50) {
+            resultFooter.querySelector('.result__footer-see').style.display = 'none';
+            resultFooter.querySelector('.result__footer-buy').style.display = 'block';
+         } else {
+            resultFooter.querySelector('.result__footer-see').style.display = 'block';
+            resultFooter.querySelector('.result__footer-buy').style.display = 'none';
+         }
+      });
+   </script>
+</body>
+
+</html>

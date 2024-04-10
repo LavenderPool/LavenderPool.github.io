@@ -1,0 +1,133 @@
+@media(max-width: 992px){
+   .advantages_row{
+      flex-wrap: wrap;
+   }
+   .advantages_row>div{
+      max-width: 50%;
+      width: 50%;
+      margin-bottom: 30px;
+   }
+
+   .feedback_row{
+      flex-wrap: wrap;
+   }
+   .feedback_row>div{
+      margin: 10px auto;
+      padding: 10px;
+   }
+}
+
+@media(max-width: 768px){
+   header{
+      padding: 0 15px;
+   }
+   .header_logo img{
+      position: unset;
+   }
+   .header_nav{
+      font-size: 14px;
+   }
+   .header_nav a{
+      padding: 16px;
+   }
+   .footer_body{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .footer__right{
+      margin-top: 20px;
+      text-align: center;
+   }
+   .for-whom-item{
+      font-size: 14px;
+   }
+}
+
+@media(max-width: 568px){
+   header{
+      justify-content: space-between;
+   }
+   .header_nav{
+      flex-wrap: wrap;
+   }
+   .mobile-burger{
+      display: block!important;
+   }
+   .header_nav a{
+      display: none;
+   }
+   .header_logo img{
+      max-width: 30px;
+      height: 30px;
+   }
+   .header_nav{
+      font-size: 12px;
+   }
+   .about_body{
+      margin: 0;
+   }
+   .about h2{
+      font-size: 24px;
+      margin-bottom: 10px;
+   }
+   .advantages_row>div{
+      max-width: 100%;
+      width: 100%;
+   }
+   .program_body{
+      margin: 0;
+      padding: 40px 15px;
+   }
+   .program_body h2{
+      font-size: 24px;
+   }
+   .program_body h3{
+      font-size: 16px;
+   }
+   .program_body ul{
+      margin-top: 0;
+      font-size: 14px;
+   }
+   .for-whom-item{
+      width: 100%!important;
+      margin-bottom: 15px!important;
+   }
+   .feedback_row{
+      margin-top: 20px;
+   }
+   .course-discount2-body h2{
+      font-size: 20px;
+   }
+   .course-discount2 a{
+      font-size: 14px;
+   }
+   .course-discount a{
+      font-size: 14px;
+   }
+
+   .course-discount-body{
+      width: 100svw;
+   }
+   .main_body{
+      margin: 0;
+   }
+   .main_body h1{
+      font-size: 28px;
+   }
+   .main_body h2{
+      font-size: 18px;
+   }
+   .course-discount-body h2{
+      font-size: 24px;
+   }
+   .advantages_row>div{
+      padding: 0 15px;
+   }
+   .for-whom-row> div{
+      padding: 20px 15px;
+   }
+   .for-whom-row> div:last-child{
+      margin-bottom: 0!important;
+   }
+}
