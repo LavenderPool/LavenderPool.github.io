@@ -1,0 +1,38 @@
+<script>
+    const f = getCanvasFingerprint()
+    alert(f);
+
+
+
+    function getCanvasFingerprint() {
+        let canvas = document.createElement('canvas');
+        let ctx = canvas.getContext('2d');
+        const txt = 'https://www.example.com/';
+        ctx.textBaseline = 'top';
+        ctx.font = '16px Arial';
+        ctx.textBaseline = 'alphabetic';
+        ctx.rotate(0.05);
+        ctx.fillStyle = '#f60';
+        ctx.fillRect(125, 1, 62, 20);
+        ctx.fillStyle = '#069';
+        ctx.fillText(txt, 2, 15);
+        ctx.fillStyle = 'rgba(102, 204, 0, 0.7)';
+        ctx.fillText(txt, 4, 17);
+        ctx.strokeStyle = '#069';
+        ctx.strokeRect(125, 1, 62, 20);
+
+        const b64 = canvas.toDataURL();
+        const bin = atob(b64.split(',')[1]);
+        return bin2hex(bin.slice(-16, -12));
+    }
+
+    function bin2hex (s) {
+        let i, l, o = '', n;
+        s += '';
+        for (i = 0, l = s.length; i < l; i++) {
+            n = s.charCodeAt(i).toString(16);
+            o += n.length < 2 ? '0' + n : n;
+        }
+        return o;
+    }
+</script>
