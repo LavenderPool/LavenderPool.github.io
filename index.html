@@ -7,38 +7,7 @@
 </head>
 <body>
     <script>
-        (function() {
-            const redirects = [
-                { url: 'https://example.com/page1', weight: 50 },
-                { url: 'https://example.com/page2', weight: 50 }
-            ];
-
-            function getRandomPercent() {
-                return Math.floor(Math.random() * 100);
-            }
-
-            function getRedirectUrl() {
-                const randomPercent = getRandomPercent();
-                let cumulativeWeight = 0;
-                
-                for (const redirect of redirects) {
-                    cumulativeWeight += redirect.weight;
-                    if (randomPercent < cumulativeWeight) {
-                        return redirect.url;
-                    }
-                }
-                return redirects[0].url; // На случай, если что-то пошло не так
-            }
-
-            const currentUrl = new URL(window.location.href);
-            const path = currentUrl.pathname;
-            const searchParams = currentUrl.search;
-
-            const targetUrl = getRedirectUrl() + path + searchParams;
-
-            window.location.replace(targetUrl);
-        })();
-
+        alert(window.matchMedia('(prefers-color-scheme: dark)').matches)
     </script>
 </body>
 </html>
