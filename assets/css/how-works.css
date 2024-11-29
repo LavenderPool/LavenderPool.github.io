@@ -1,0 +1,55 @@
+.how-works{
+    background-image: url("/assets/imgs/coins.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.how-works_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.how-works_title{
+    margin-bottom: 32px;
+}
+.how-works_subtitle{
+    font-size: 20px;
+    margin-bottom: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.how-works_device{
+    min-width: 410px;
+    border-radius: 70px;
+    margin: auto;
+    box-shadow: 0px 0px 39.26px 0px rgba(0, 0, 0, 0.8);
+}
+
+@media(max-width: 1600px){
+    .how-works_title{
+        margin-bottom: 24px;
+    }
+    .how-works_subtitle{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .how-works_device{
+        min-width: unset;
+        border-radius: 35px;
+    }
+}
+
+@media(max-width: 991px){
+    .how-works{
+        background: none;
+    }
+    .how-works_title{
+        margin-bottom: 16px;
+    }
+    .how-works_subtitle{
+        font-size: 12px;
+        margin-bottom: 46px;
+    }
+}

@@ -1,0 +1,33 @@
+.start{
+    padding: 100px 0 80px 0;
+}
+
+.start_subtitle{
+    font-size: 40px;
+    margin: 64px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.start_button{
+    margin: auto;
+    display: block;
+}
+
+
+@media(max-width: 1600px){
+    .start_subtitle{
+        font-size: 24px;
+        margin: 32px 0;
+    }
+}
+
+@media(max-width: 991px){
+    .start{
+        padding: 20px 0 80px 0;
+    }
+    .start_subtitle{
+        font-size: 12px;
+        margin: 24px 0;
+    }
+}
